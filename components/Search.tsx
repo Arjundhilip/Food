@@ -23,7 +23,7 @@ const Search = ({ search }: { search?: string }) => {
     } else {
       router.push(`/`)
     }
-  }, [query])
+  })
 
   return (
     <div className='relative rounded-md shadow-sm'>
