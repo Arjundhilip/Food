@@ -199,7 +199,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 className="h-10 w-auto"
                 src="/hero-logo4.png"
                 alt=""
