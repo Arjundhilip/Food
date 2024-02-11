@@ -10,20 +10,20 @@ const Search = ({ search }: { search?: string }) => {
   const initialRender = useRef(true)
 
   const [text, setText] = useState(search)
-  const [query] = useDebounce(text, 750)
+  // const [query] = useDebounce(text, 750)
 
-  useEffect(() => {
-    if (initialRender.current) {
-      initialRender.current = false
-      return
-    }
+  // useEffect(() => {
+  //   if (initialRender.current) {
+  //     initialRender.current = false
+  //     return
+  //   }
 
-    if (!query) {
-      router.push(`/`)
-    } else {
-      router.push(`/`)
-    }
-  })
+  //   if (!query) {
+  //     router.push(`/`)
+  //   } else {
+  //     router.push(`/`)
+  //   }
+  // }, [query])
 
   return (
     <div className='relative rounded-md shadow-sm'>
@@ -37,7 +37,7 @@ const Search = ({ search }: { search?: string }) => {
       <input
         value={text}
         placeholder='Search Foods...'
-        onChange={e => setText(e.target.value)}
+        // onChange={e => setText(e.target.value)}
         className='block w-full rounded-full border-0 py-1 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400'
       />
     </div>
