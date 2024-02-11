@@ -18,10 +18,24 @@ const Map = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Popup>
-            <Link href="https://www.youtube.com/watch?v=WtoyIiOp5Awa"> Hey Fathima</Link>
+          <Popup className='font-bold text-lg leading-8 text-gray-600'>
+            <Link href="/districts/coimbatore"> Coimbatore</Link>
           </Popup>
         </Marker>
+
+        <Marker
+          position={[13.0827, 80.2707]}
+          draggable={true}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Popup className='font-bold text-lg leading-8 text-gray-600'>
+            <Link href="/districts/chennai"> Chennai</Link>
+          </Popup>
+        </Marker>
+
       </MapContainer>
     </div>
   )
