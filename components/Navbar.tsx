@@ -15,6 +15,7 @@ import {
   UserIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import Search from "./Search"
 
 
 
@@ -182,7 +183,9 @@ const Navbar = () => {
         </Popover.Group>
 
         {/*Cart&Sign*/}
-        
+        <div className="relative block">
+          <Search />
+        </div>
 
       </nav>
 

@@ -6,7 +6,7 @@ const products = [
         name: 'Thirunelvi Halwa',
         href: '#',
         price: '$48',
-        imageSrc: 'https://www.feastingathome.com/wp-content/uploads/2021/12/vegetarian-dinner-recipes-2.jpg',
+        imageSrc: '/food1.jpg',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
@@ -14,7 +14,7 @@ const products = [
         name: 'Manaparai Murukku',
         href: '#',
         price: '$35',
-        imageSrc: 'https://hurrythefoodup.com/wp-content/uploads/2020/09/55-Vegetarian-Indian-Recipes.jpg',
+        imageSrc: '/food3.jpg',
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
@@ -22,7 +22,7 @@ const products = [
         name: 'Kovilpatti Kadalamittai',
         href: '#',
         price: '$89',
-        imageSrc: 'https://pipingpotcurry.com/wp-content/uploads/2021/04/indian-onion-salad.jpg',
+        imageSrc: '/food1.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
@@ -30,7 +30,7 @@ const products = [
         name: 'Butter Chicken',
         href: '#',
         price: '$35',
-        imageSrc: 'https://hurrythefoodup.com/wp-content/uploads/2020/09/55-Vegetarian-Indian-Recipes.jpg',
+        imageSrc: '/food3.jpg',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
 ]
