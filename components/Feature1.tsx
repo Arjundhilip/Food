@@ -48,6 +48,8 @@ export default function Example() {
                                 <Image
                                     src={product.imageSrc}
                                     alt={product.imageAlt}
+                                    width={400}
+                                    height={400}
                                     className="h-full w-full object-cover object-center group-hover:opacity-75"
                                 />
                             </div>
