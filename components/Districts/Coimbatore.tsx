@@ -11,6 +11,7 @@ const features = [
   },
 ]
 
+
 const products = [
   {
       id: 1,
@@ -76,8 +77,8 @@ const Coimbatore = () => {
             </div>
           </div>
           <Image
-            src="https://www.google.com/maps/vt/data=Rh5eSgMARZidU-wt837Lc4mrhgcmPEioEXfLm1Mz1xFF6QpJfVZljf7UHEuBtQ-1vqXAv2-Y3OIEzN60t46FNVzMRHXwK7FrJZOjAJmcWJiojfPW4Ostn0QFq6YHAPhXGJllm74slwx4NvJ3rDLwf4ei8-0xII_9m_bVEmwHVaI_u7XYNkxrWGjwNRDmqKkhORJJgXVDNPS2Qm9nw5fITYHiFd6ak5WOHNDOHzpkoBvy017g1AVxjX3TF2Nnwzfb-c7sOwmyrMk4TOGBxb0tnSM4DJE4CHkS6OVc"
-            alt="Product screenshot"
+            src="/districts/Coimbatore.png"
+            alt = "Coimbatore"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2432}
             height={1442}
