@@ -18,18 +18,22 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import Search from "./Search"
 
 
+const media= [
+  { name: 'Images', description: '', href: '#', icon: UserIcon },
+  { name: 'Video', description: '', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Literature',description: '', href: '#', icon: FingerPrintIcon },
+  
+]
 
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: UserIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+
+const dishes = [
+  { name: 'Popular Dishes', description: '', href: '#', icon: UserIcon },
+  { name: 'Traditional Dishes', description: '', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Preparation',description: '', href: '#', icon: FingerPrintIcon },
+  
 ]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+
+
 
 const Navbar = () => {
 
@@ -69,13 +73,13 @@ const Navbar = () => {
         {/*Links*/}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
 
-          <Link href="/recipes" className="text-sm font-semibold leading-6 text-gray-900">
-            Recipes
+          <Link href="/districts/map" className="text-sm font-semibold leading-6 text-gray-900">
+            Districts
           </Link>
 
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Services
+              Dishes
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-900" aria-hidden="true" />
             </Popover.Button>
 
@@ -90,7 +94,7 @@ const Navbar = () => {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {products.map((item) => (
+                  {dishes.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-10"
@@ -108,25 +112,18 @@ const Navbar = () => {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-10">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-green-500"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-gray-600" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+                
               </Popover.Panel>
             </Transition>
           </Popover>
+
+          <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
+            History
+          </Link>
 
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              How to
+              Media
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-900" aria-hidden="true" />
             </Popover.Button>
 
@@ -141,7 +138,7 @@ const Navbar = () => {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {products.map((item) => (
+                  {media.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-10"
@@ -159,26 +156,10 @@ const Navbar = () => {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-10">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-green-500"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-gray-600" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+                
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Contact
-          </a>
-
 
         </Popover.Group>
 
@@ -199,11 +180,14 @@ const Navbar = () => {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Vercel</span>
               <Image
                 className="h-10 w-auto"
-                src="/hero-logo4.png"
+                src="/vercel.svg"
                 alt=""
+                width={70} 
+                height={70}
+
               />
             </a>
             <button
@@ -223,47 +207,21 @@ const Navbar = () => {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-10"
                 >
-                  About
+                  Districts
                 </a>
 
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-10">
-                        Services
+                        Dishes
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
-                          <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-10"
-                          >
-                            {item.name}
-                          </Disclosure.Button>
-                        ))}
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-
-                <Disclosure as="div" className="-mx-3">
-                  {({ open }) => (
-                    <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-10">
-                        Marketplace
-                        <ChevronDownIcon
-                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
-                          aria-hidden="true"
-                        />
-                      </Disclosure.Button>
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...dishes,].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
@@ -282,26 +240,44 @@ const Navbar = () => {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-10"
                 >
-                  Portfolio
+                  History
                 </a>
 
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-10"
-                >
-                  Contact
-                </a>
+                <Disclosure as="div" className="-mx-3">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-10">
+                        Media
+                        <ChevronDownIcon
+                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                          aria-hidden="true"
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {[...media,].map((item) => (
+                          <Disclosure.Button
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-10"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
+                        ))}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+
+                
+
+                
+
+                
 
               </div>
 
-              <div className="py-6">
-                <a
-                  href="auth/login"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-10"
-                >
-                  Log in
-                </a>
-              </div>
+              
             </div>
           </div>
         </Dialog.Panel>
