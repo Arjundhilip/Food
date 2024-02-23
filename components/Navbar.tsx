@@ -73,7 +73,11 @@ const Navbar = () => {
         {/*Links*/}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
 
-          <Link href="/districts/map" className="text-sm font-semibold leading-6 text-gray-900">
+        <Link href="/districts/map" className="text-sm font-semibold leading-6 text-gray-900">
+            Maps
+          </Link>
+
+          <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Districts
           </Link>
 
