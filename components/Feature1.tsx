@@ -28,7 +28,7 @@ const products = [
     {
         id: 4,
         name: 'Butter Chicken',
-        href: '#',
+        href: '/dishes/butterchicken',
         price: '$35',
         imageSrc: '/food3.jpg',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',

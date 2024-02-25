@@ -16,8 +16,8 @@ const Feature10 = () => {
             
   
             <div className="mt-10 mb-5 place-content-center max-w-full" >
-              <video muted width="vw" height="100px" controls preload="auto" className='place-content-center justify-end rounded-xl'>
-                <source src="/blue.mp4" type="video/mp4" />
+              <video muted width="vw" height="vh" controls preload="auto" className='place-content-center justify-end rounded-xl'>
+                <source src="/blue1.mp4" type="video/mp4"  />
                 Your browser does not support the video tag.
               </video>
             </div>
