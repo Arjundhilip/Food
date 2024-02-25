@@ -1,6 +1,6 @@
 import Feature1 from "@/components/Feature1";
-import Feature2 from "@/components/Feature2";
-import Feature8 from "@/components/Feature8";
+import Feature10 from "@/components/Feature10";
+import Feature9 from "@/components/Feature9";
 import Hero from "@/components/Hero";
 
 
@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Feature9 />
+      <Feature10 />
       <Feature1 />
-      <Feature8 />
-      {/* <Feature2 /> */}
       
       
     </>
