@@ -25,10 +25,12 @@ const Feature10 = () => {
             <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
               <h2 className="text-right">
               </h2>
-              <h2 className="text-right  font-bold ">
-              It was popularised in the 1960s with the release of Letraset sheets 
-              containing Lorem Ipsum passages, and more recently with desktop publishing 
-              software like Aldus PageMaker.
+              <h2 className="text-right">
+              Our mission is to preserve the culinary traditions that define Tamil Nadu. 
+              Through meticulous documentation, we capture the stories behind each dish, 
+              the regional variations, and the unique culinary processes that make Tamil Nadu&apos;s 
+              cuisine a true treasure trove of flavors.
+
               </h2>
             </div>
   
