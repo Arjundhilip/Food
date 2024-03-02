@@ -1,10 +1,10 @@
-import Chennai from '@/components/Districts/Chennai'
+import Districts from '@/components/Districts'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Chennai/>
+      <Districts/>
     </div>
   )
 }

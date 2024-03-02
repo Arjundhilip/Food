@@ -99,7 +99,7 @@ const people = [
 ]
 
 
-const Butterchicken = () => {
+const Srivilliputhur_Palkova = () => {
     return (
         <section>
             <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
@@ -318,4 +318,4 @@ const Butterchicken = () => {
     )
 }
 
-export default Butterchicken
+export default Srivilliputhur_Palkova

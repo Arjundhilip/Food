@@ -3,10 +3,9 @@ import Image from 'next/image'
 const products = [
     {
         id: 1,
-        name: 'Thirunelvi Halwa',
-        href: '#',
-        price: '$48',
-        imageSrc: '/food1.jpg',
+        name: 'Srivilliputhur Palkova',
+        href: '/dishes/srivilliputhurpalkova',
+        imageSrc: '/Ingredients/Palkova.jpg',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
@@ -50,7 +49,7 @@ export default function Example() {
                                     alt={product.imageAlt}
                                     width={400}
                                     height={400}
-                                    className="h-full w-full object-cover object-center group-hover:opacity-75"
+                                    className=" object-fill object-center group-hover:opacity-75"
                                 />
                             </div>
                             <h3 className="bold-20 lg:bold-20 mt-4 text-center text-sm text-gray-700">{product.name}</h3>

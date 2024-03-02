@@ -1,10 +1,10 @@
-import Butterchicken from '@/components/dishes/Butterchicken'
+import Srivilliputhur_Palkova from '@/components/Dishes/Srivilliputhur_Palkova'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Butterchicken/>
+      <Srivilliputhur_Palkova/>
     </div>
   )
 }
