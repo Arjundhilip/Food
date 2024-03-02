@@ -13,8 +13,7 @@ export default function Home() {
       <Feature10 />
       <Feature11 />
       <Feature1 />
-      
-      
+    
     </>
   )
 }

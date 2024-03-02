@@ -5,7 +5,7 @@ const districts = [
       name: 'Viruthunagar',
       href : '/districts/viruthunagar',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        '/districts/Coimbatore.png',
     },
     
     // More people...
@@ -26,7 +26,7 @@ const districts = [
             {districts.map((person) => (
               <li key={person.name}>
                 <div className="flex items-center gap-x-6">
-                  <Image className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                  <Image className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" width={16} height={16}/>
                   <div>
                     <a href={person.href} className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</a>
                   </div>
