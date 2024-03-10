@@ -1,10 +1,15 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/20/solid'
+import PrintButton from '../PrintButton'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
 }
+
+
+
 
 const reviews = { href: '#', average: 5, totalCount: 120 }
 const products = [
@@ -26,6 +31,8 @@ const products = [
     },
 
 ]
+
+
 
 
 const people = [
@@ -97,9 +104,40 @@ const people = [
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
 ]
+interface Ingredient {
+    name: string;
+    quantity: number;
+    unit: string;
+}
 
 
 const Srivilliputhur_Palkova = () => {
+    const [isChecked, setIsChecked] = useState(false);
+
+    const handleCheckboxChange = () => {
+        setIsChecked(!isChecked);
+    };
+
+    const [numServings, setNumServings] = useState(1); // Default servings
+
+    const ingredients: Ingredient[] = [
+        { name: 'puttu flour', quantity: 0.5, unit: 'cup' },
+        { name: 'water or add as required', quantity: 0.17, unit: 'cup' },
+        { name: 'water or add as required', quantity: 0.17, unit: 'cup' },
+        { name: 'water or add as required', quantity: 0.17, unit: 'cup' },
+        { name: 'water or add as required', quantity: 0.17, unit: 'cup' },
+        { name: 'water or add as required', quantity: 0.17, unit: 'cup' },
+        { name: 'water or add as required', quantity: 0.17, unit: 'cup' },
+
+        // Add more ingredients as needed
+    ];
+
+    const handleServingsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newServings = parseInt(e.target.value);
+        setNumServings(newServings);
+    };
+
+
     return (
         <section>
             <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
@@ -132,7 +170,7 @@ const Srivilliputhur_Palkova = () => {
 
                 <div className="mx-auto flex max-w-lg flex-col gap-y-4 ">
                     <Image
-                        src="/districts/Virudhunagar.jpg"
+                        src="/districts/ls_districts/virudhunagar.jpg"
                         alt="phones"
                         width={500}
                         height={300}
@@ -180,8 +218,8 @@ const Srivilliputhur_Palkova = () => {
                 <div className="mt-5 mb-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                     <dt className="text-base font-semibold leading-6 text-gray-900">SIGNIFICANT FEATURES</dt>
                     <dd className="mt-1 text-justify text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        The art of preparing Srivilliputhur Palkova is passed down through generations. 
-                        The slow-cooking technique involves simmering fresh cow&apos;s milk to gradually reduce and thicken, 
+                        The art of preparing Srivilliputhur Palkova is passed down through generations.
+                        The slow-cooking technique involves simmering fresh cow&apos;s milk to gradually reduce and thicken,
                         resulting in a creamy, caramelized dessert.
                     </dd>
                 </div>
@@ -189,8 +227,8 @@ const Srivilliputhur_Palkova = () => {
                 <div className="mt-5 mb-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                     <dt className="text-base font-semibold leading-6 text-gray-900">FESTIVALS AND CELEBRATIONS</dt>
                     <dd className="mt-1 text-justify text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        Srivilliputhur Palkova holds a central place in the town&apos;s festival calendar, particularly 
-                        during Andal Thirukalyanam, Krishna Jayanthi, and Navaratri. The temple premises come alive 
+                        Srivilliputhur Palkova holds a central place in the town&apos;s festival calendar, particularly
+                        during Andal Thirukalyanam, Krishna Jayanthi, and Navaratri. The temple premises come alive
                         with the aroma of Palkova, and devotees eagerly partake in its distribution as prasadam.
                     </dd>
                 </div>
@@ -285,6 +323,210 @@ const Srivilliputhur_Palkova = () => {
 
             <div className="mt-5 mb-5 place-content-center max-w-full px-40">
                 <div className="mb-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                    <dt className=" text-base font-semibold leading-6 text-gray-900">RECIPE CARD</dt>
+                    <dd className="recipe-card p-4 border-2 border-gray-900 shadow-lg rounded-lg overflow-hidden mt-1 text-base leading-6 text-gray-900 sm:col-span-2 sm:mt-0">
+
+                        <h2 className="text-3xl font-semibold mb-4">Srivilliputhur Palkova</h2>
+                        <dl className="mb-4 mx-auto place-content-center max-w-full sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-2 col-span-2">
+                            <div className=" text-left flex max-w-full flex-col gap-y-4">
+                                <dt className="mb-6 text-justify text-base leading-7 text-gray-600" >Srivilliputhur Palkova is a decadent traditional sweet from Srivilliputhur, Tamil Nadu.
+                                    This luscious milk-based delicacy is known for its rich texture and sweet flavor. Also called Thirattipal, it is a popular dairy product originating from Tamil Nadu,
+                                    prepared by continuous stirring to concentrate the ingredients and coagulating milk with sour curd.
+                                </dt>
+                            </div>
+
+                            <div className="flex max-w-lg flex-col">
+                                <Image
+                                    src="/Ingredients/Palkova.jpg"
+                                    alt="phones"
+                                    style={{
+                                        width: 'auto%',
+                                        height: 'auto%',
+                                    }}
+                                    width={500}
+                                    height={500}
+                                    className='flex flex-1 rounded-md items-center justify-end' />
+                            </div>
+                        </dl>
+
+                        <div className="bg-white col-span-2 mb-2 border-y border-gray-200 py-4 ">
+                            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
+
+                                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden xl:aspect-h-10 xl:aspect-w-10 ">
+                                    <PrintButton
+                                        type="button"
+                                        title="PRINT"
+                                        icon="/Icons/print.png"
+                                        variant="btn_dark_green_outline"
+                                        full
+                                    />
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="grid grid-flow-row-dense grid-cols-10 mb-2">
+                            <div className="my-2 border-r-2 border-gray-200">
+                                <Image
+                                    src="/Icons/time.png"
+                                    alt="phones"
+                                    style={{
+                                        width: 'auto',
+                                        height: 'auto',
+                                    }}
+                                    width={40}
+                                    height={40}
+                                    className='rounded-md items-center justify-end'
+                                />
+                            </div>
+                            <div className="col-span-3 my-2 pl-4 border-r-2 border-gray-200">
+                                {/* Display "Prep Time" with its value */}
+                                <strong>Prep Time:</strong><br /> 4 mins
+                            </div>
+                            <div className="col-span-3 my-2 pl-4 border-r-2 border-gray-200">
+                                {/* Display "Prep Time" with its value */}
+                                <strong>Cook Time:</strong><br /> 14 mins
+                            </div>
+                            <div className="col-span-3 my-2 pl-4">
+                                {/* Display "Prep Time" with its value */}
+                                <strong>Total Time:</strong><br /> 24 mins
+                            </div>
+
+                        </div>
+
+                        <div className="grid grid-flow-row-dense grid-cols-10 mb-2">
+                            <div className="my-2 border-r-2 border-gray-200">
+                                <Image
+                                    src="/Icons/cooking.png"
+                                    alt="phones"
+                                    style={{
+                                        width: 'auto',
+                                        height: 'auto',
+                                    }}
+                                    width={40}
+                                    height={40}
+                                    className='rounded-md items-center justify-end'
+                                />
+                            </div>
+                            <div className="col-span-3 my-2 pl-4 border-r-2 border-gray-200">
+                                {/* Display "Prep Time" with its value */}
+                                <strong>Cuisine</strong><br />Kerala, South Indian
+                            </div>
+                            <div className="col-span-3 my-2 pl-4 border-r-2 border-gray-200">
+                                {/* Display "Prep Time" with its value */}
+                                <strong>Course</strong><br />Breakfast
+                            </div>
+                            <div className="col-span-2 my-2 pl-4 ">
+                                {/* Display "Prep Time" with its value */}
+                                <strong>Diet</strong><br />Vegan
+                            </div>
+
+
+
+                        </div>
+
+                        <div className="">
+
+                            <div className="flex mt-2 mb-2 border-t border-gray-200 pt-4 ">
+                                <label htmlFor="servings" className="mr-5 "><strong>Servings</strong></label>
+                                <input
+                                    type="number"
+                                    id="servings"
+                                    name="servings"
+                                    value={numServings}
+                                    onChange={handleServingsChange}
+                                    className="w-12  border border-gray-40 pl-1.5 font-semibold rounded-sm focus:outline-none focus:border-blue-500"
+                                />
+                            </div>
+                            <h2 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Ingredients</h2>
+                            {ingredients.map((ingredient, index) => (
+                                <div className="my-2 space-y-6">
+                                    <div className="relative flex gap-x-3">
+                                        <div className="flex h-6 items-center">
+                                            <input
+                                                id="comments"
+                                                name="comments"
+                                                type="checkbox"
+                                                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                                            />
+                                        </div>
+
+                                        <div className="text-sm leading-6">
+                                            <a key={index} className="text-gray-700">
+                                                {`${(ingredient.quantity) * numServings} ${ingredient.unit} ${ingredient.name}`}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>))}
+                        </div>
+
+                        <h3 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Instructions</h3>
+                        <ol className="list-decimal font-semibold list-inside mb-2">
+                            <li>
+                                <span className="font-normal text-gray-900 dark:text-black">Take 1 cup puttu flour in a mixing bowl or a pan.</span>
+                            </li>
+                            <li>
+                                <span className="font-normal text-gray-900 dark:text-black">Add salt to taste.</span>
+                            </li>
+                            <li>
+                                <span className="font-normal text-gray-900 dark:text-black">Sprinkle water gradually while mixing until the mixture resembles coarse crumbs. The mixture should hold shape when pressed together but crumble easily.</span>
+                            </li>
+                        </ol>
+
+                        <h3 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Assembly</h3>
+                        <ol className="list-decimal font-semibold list-inside mb-2">
+                            <li>
+                                <span className="font-normal text-gray-900 dark:text-black">Take 1 cup puttu flour in a mixing bowl or a pan.</span>
+                            </li>
+                            <li>
+                                <span className="font-normal text-gray-900 dark:text-black">Add salt to taste.</span>
+                            </li>
+                            <li>
+                                <span className="font-normal text-gray-900 dark:text-black">Sprinkle water gradually while mixing until the mixture resembles coarse crumbs. The mixture should hold shape when pressed together but crumble easily.</span>
+                            </li>
+                        </ol>
+
+                        <h3 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Notes</h3>
+                        <ol className="mb-2 list-disc  list-inside">
+                            <li>
+                                <span className="italic text-gray-900 dark:text-black">Take 1 cup puttu flour in a mixing bowl or a pan.</span>
+                            </li>
+                            <li>
+                                <span className="italic text-gray-900 dark:text-black">Take 1 cup puttu flour in a mixing bowl or a pan.</span>
+                            </li>
+                            <li>
+                                <span className="italic text-gray-900 dark:text-black">Take 1 cup puttu flour in a mixing bowl or a pan.</span>
+                            </li>
+                            <li>
+                                <span className="italic text-gray-900 dark:text-black">Take 1 cup puttu flour in a mixing bowl or a pan.</span>
+                            </li>
+                        </ol>
+
+                        <h3 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Nutrition Info (Approximate Values)</h3>
+                        <dl className="pt-4 mb-4 mx-auto place-content-center max-w-full sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-2 col-span-2">
+                            <div className="flex max-w-lg flex-col">
+                                <Image
+                                    src="/NutritionLabel.png"
+                                    alt="phones"
+                                    style={{
+                                        width: 'auto',
+                                        height: 'auto%',
+                                    }}
+                                    width={500}
+                                    height={500}
+                                    className='flex flex-1 rounded-md items-center justify-end' />
+                            </div>
+                        </dl>
+
+                    </dd>
+
+
+
+                </div>
+            </div >
+
+            <div className="mt-5 mb-5 place-content-center max-w-full px-40">
+                <div className="mb-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                     <dt className="text-base font-semibold leading-6 text-gray-900"></dt>
                     <dd className="mt-1 text-base font-bold leading-6 text-gray-700 sm:col-span-2 sm:mt-0">RATING AND COMMENTS
                     </dd>
@@ -314,7 +556,7 @@ const Srivilliputhur_Palkova = () => {
             </div>
 
 
-        </section>
+        </section >
     )
 }
 

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Feature9 = () => {
     return (
-        <div className="bg-white py-24 sm:py-16">
+        <div className="bg-white py-24 sm:py-16 px-10">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <dl className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
 

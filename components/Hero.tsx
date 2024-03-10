@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
+
     <section className="flexCenter w-full flex-col">
       <div className="get-app">
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12">
@@ -37,6 +38,7 @@ const Hero = () => {
         className='flex flex-1 items-center justify-end rounded-xl' />
       </div>
     </section>
+    
   )
 }
 

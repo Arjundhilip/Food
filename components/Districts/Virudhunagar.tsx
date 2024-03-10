@@ -43,71 +43,68 @@ const products = [
 
 ]
 
-const people = [
+const geo = [
     {
-        name: 'Area',
-        email: 'leslie.alexander@example.com',
+        heading: 'Area',
         role: 'Total of 4241.0 Sq.Kms',
-        imageUrl:
+        imageUrl1:
             'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        lastSeen: '3h ago',
-        lastSeenDateTime: '2023-01-23T13:23Z',
     },
     {
-        name: 'Area',
-        email: 'leslie.alexander@example.com',
-        role: 'Total of 4241.0 Sq.Kms',
-        imageUrl:
+        heading: 'Boundaries',
+        role: 'Bounded by Kerala State to the West, Madurai and Sivagangai districts to the North, Ramanathapuram District to the East, and Tirunelveli, Thoothukudi, and Tenkasi Districts to the South.',
+        imageUrl1:
             'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        lastSeen: '3h ago',
-        lastSeenDateTime: '2023-01-23T13:23Z',
     },
-    {
-        name: 'Area',
-        email: 'leslie.alexander@example.com',
-        role: 'Total of 4241.0 Sq.Kms',
-        imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        lastSeen: '3h ago',
-        lastSeenDateTime: '2023-01-23T13:23Z',
-    },
-    {
-        name: 'Area',
-        email: 'leslie.alexander@example.com',
-        role: 'Total of 4241.0 Sq.Kms',
-        imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        lastSeen: '3h ago',
-        lastSeenDateTime: '2023-01-23T13:23Z',
-    },
-    {
-        name: 'Area',
-        email: 'leslie.alexander@example.com',
-        role: 'Total of 4241.0 Sq.Kms',
-        imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        lastSeen: '3h ago',
-        lastSeenDateTime: '2023-01-23T13:23Z',
-    },
-    {
-        name: 'Area',
-        email: 'leslie.alexander@example.com',
-        role: 'Total of 4241.0 Sq.Kms',
-        imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        lastSeen: '3h ago',
-        lastSeenDateTime: '2023-01-23T13:23Z',
-    },
-
 ]
 
-const Viruthunagar = () => {
+const climate = [
+    {
+        heading: 'Climate',
+        role: 'Hot and dry weather prevails for about 9 months.',
+        imageUrl1:
+            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    {
+        heading: 'Rainfall',
+        role: 'Normally experiences deficit rainfall.',
+        imageUrl1:
+            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    {
+        heading: 'Annual rainfall',
+        role: '862.4 m.m.',
+        imageUrl1:
+            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+]
+
+const pop = [
+    {
+    heading: 'Total Population',
+    role: '19,43,309',        
+    imageUrl1:'/archive/totalpopulation.png',
+    },
+    {
+    heading: 'Sex Ratio',
+    role: '1007/1000',        
+    imageUrl1:'/archive/sexratio.png',
+    },
+    {
+    heading: 'Litearcy',
+    role: '80.15%',        
+    imageUrl1:'/archive/literacy.png',
+    },
+    ]
+    
+
+const Virudhunagar = () => {
     return (
         <section>
             <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
                 <Image
-                    src="/Ingredients/Palkova.jpg"
-                    alt="phones"
+                    src="/districts/Collage/virudhunagar.png"
+                    alt="Collage of Dist"
                     style={{
                         width: '100%',
                         height: 'auto',
@@ -118,9 +115,8 @@ const Viruthunagar = () => {
             </div>
 
             <div className=" mx-auto place-content-center max-w-full px-4 sm:px-40 sm:mt-10 sm:mb-5 lg:px-40 " >
-                <h2 className="text-base font-semibold leading-7 text-indigo-600">ஸ்ரீவில்லிபுதூர் பால்கோவா</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Srivilliputhur Palkova</p>
-
+                <h2 className="text-base font-semibold leading-7 text-indigo-600">விருதுநகர்</h2>
+                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Virudhunagar</p>
             </div>
 
             <dl className="mx-auto place-content-center max-w-full px-4 sm:px-40  sm:mb-5 sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-1">
@@ -134,8 +130,8 @@ const Viruthunagar = () => {
 
             <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
                 <Image
-                    src="/districts/Virudhunagar.jpg"
-                    alt="phones"
+                    src="/districts/ls_districts/virudhunagar.jpg"
+                    alt="Map of virudhunagar"
                     style={{
                         width: '100%',
                         height: 'auto',
@@ -152,31 +148,75 @@ const Viruthunagar = () => {
                     This is a reader-favourite recipe included by popular demand in my debut cookbook “Dinner”!
                 </dt>
             </div> */}
+            <div>
+                
+                <div className="my-2 max-w-4xl px-4 sm:px-6 lg:px-40">
+                    <h2 className="text-2xl font-bold mt-4">Geographical Features</h2>
 
-            <div className="my-2 max-w-4xl px-4 place-items-start sm:px-6 lg:px-40">
-                <ul className="divide-y divide-gray-200">
-                    {people.map((person, index) => (
-                        <li key={index} className="flex items-center justify-between py-4">
-                            <div className="flex items-center">
-                                <Image
+                    <div className="mt-4">
+                        {geo.map((person, index) => (
+                            <div key={index} className="flex items-center py-4">
+                                <img
                                     className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl}
-                                    alt={person.name}
+                                    src={person.imageUrl1}
+                                    alt={person.heading}
+                                    width={50}
+                                    height={50}
                                 />
-                                <div>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.name}</h2>
-
+                                <div className=''>
+                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
+                                    <p className="text-sm text-gray-600">{person.role}</p>
                                 </div>
                             </div>
-                            <p className="text-sm text-gray-600">{person.role}</p>
-                        </li>
-                    ))}
-                </ul>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="my-2 max-w-4xl px-4 sm:px-6 lg:px-40">
+                    <h2 className="text-2xl font-bold mt-4">Climate and Rainfall</h2>
+
+                    <div className="mt-4">
+                        {climate.map((person, index) => (
+                            <div key={index} className="flex items-center py-4">
+                                <img
+                                    className="h-10 w-10 rounded-full object-cover mr-4"
+                                    src={person.imageUrl1}
+                                    alt={person.heading}
+                                    width={50}
+                                    height={50}
+                                />
+                                <div className=''>
+                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
+                                    <p className="text-sm text-gray-600">{person.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="my-2 max-w-4xl px-4 sm:px-6 lg:px-40">
+                    <h2 className="text-2xl font-bold mt-4">Population and Rainfall</h2>
+
+                    <div className="mt-4">
+                        {pop.map((person, index) => (
+                            <div key={index} className="flex items-center py-4">
+                                <img
+                                    className="h-10 w-10 rounded-full object-cover mr-4"
+                                    src={person.imageUrl1}
+                                    alt={person.heading}
+                                    width={50}
+                                    height={50}
+                                />
+                                <div className=''>
+                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
+                                    <p className="text-sm text-gray-600">{person.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
             </div>
-
-
-
-
 
             <dl className="mx-auto place-content-center max-w-full px-4 sm:px-40 sm:mt-10 sm:mb-5 sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-2">
                 <div className=" text-left mx-auto flex max-w-full flex-col gap-y-4">
@@ -188,11 +228,11 @@ const Viruthunagar = () => {
 
                 <div className="mx-auto flex max-w-lg flex-col gap-y-4 ">
                     <Image
-                        src="/districts/Virudhunagar.jpg"
-                        alt="phones"
+                        src="/districts/multimedia/virudhunagar.png"
+                        alt="Multimedia"
                         width={500}
                         height={300}
-                        className='flex flex-1 items-center justify-end' />
+                        className='flex flex-1 items-center justify-end rounded-md' />
                 </div>
             </dl>
 
@@ -227,4 +267,4 @@ const Viruthunagar = () => {
     )
 }
 
-export default Viruthunagar
+export default Virudhunagar

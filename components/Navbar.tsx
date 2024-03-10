@@ -30,8 +30,8 @@ const history = [
 ]
 
 const dishes = [
-  { name: 'Popular Dishes', description: '', href: '#', icon: UserIcon },
-  { name: 'Signature Dishes', description: '', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Popular Dishes', description: '', href: '/dishes/popular', icon: UserIcon },
+  { name: 'Signature Dishes', description: '', href: '/dishes/signature', icon: CursorArrowRaysIcon },
   { name: 'Preparation', description: '', href: '#', icon: FingerPrintIcon },
 
 ]

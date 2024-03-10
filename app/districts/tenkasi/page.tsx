@@ -1,10 +1,11 @@
-import Viruthunagar from '@/components/Districts/Viruthunagar'
+import Tenkasi from '@/components/Districts/Tenkasi'
+
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Viruthunagar/>
+      <Tenkasi/>
     </div>
   )
 }

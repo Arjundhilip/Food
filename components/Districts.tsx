@@ -1,32 +1,31 @@
 import Image from "next/image"
+import { districts } from "@/constants/districts"
 
-const districts = [
-    {
-      name: 'Viruthunagar',
-      href : '/districts/viruthunagar',
-      imageUrl:
-        '/districts/Coimbatore.png',
-    },
-    
-    // More people...
-  ]
-  
-  export default function Example() {
-    return (
-      <div className="bg-white py-16 sm:py-16">
-        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
-              suspendisse.
+export default function Example() {
+  return (
+    <section>
+      <div className="bg-white py-10 sm:py-10">
+        <div className="mx-auto grid max-w-6xl gap-x-8 gap-y-20 px-6 lg:px-8">
+          <div className="md:w-8/12">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Districts</h2>
+            <p className="text-justify my-4 text-sm text-gray-600">
+              To celebrate the culinary diversity of our state through its districts, we have meticulously curated a collection that showcases the unique flavors, ingredients, and traditions of each district. From the rugged terrain of our mountainous districts to the fertile plains of our agricultural heartlands, each district has its own distinct identity shaped by its natural landscape, historical heritage, and local communities.
             </p>
           </div>
+        </div>
+
+        <div className="mx-auto grid max-w-6xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
+          {/* <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Districts</h2>
+            <p className="text-justify mt-6 text-sm text-gray-600">
+              To celebrate the culinary diversity of our state through its districts, we have meticulously curated a collection that showcases the unique flavors, ingredients, and traditions of each district. From the rugged terrain of our mountainous districts to the fertile plains of our agricultural heartlands, each district has its own distinct identity shaped by its natural landscape, historical heritage, and local communities.
+            </p>
+          </div> */}
           <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
             {districts.map((person) => (
               <li key={person.name}>
                 <div className="flex items-center gap-x-6">
-                  <Image className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" width={16} height={16}/>
+                  <Image className="rounded-full object-fill object-center group-hover:opacity-75" src={person.imageUrl} alt="" width={60} height={60} />
                   <div>
                     <a href={person.href} className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</a>
                   </div>
@@ -36,6 +35,6 @@ const districts = [
           </ul>
         </div>
       </div>
-    )
-  }
-  
+    </section>
+  )
+}

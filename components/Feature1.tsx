@@ -4,7 +4,7 @@ const products = [
     {
         id: 1,
         name: 'Srivilliputhur Palkova',
-        href: '/dishes/srivilliputhurpalkova',
+        href: '/dishes/signature/srivilliputhurpalkova',
         imageSrc: '/Ingredients/Palkova.jpg',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
