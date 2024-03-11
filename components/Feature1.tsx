@@ -13,7 +13,7 @@ const products = [
         name: 'Manaparai Murukku',
         href: '#',
         price: '$35',
-        imageSrc: '/food3.jpg',
+        imageSrc: '/Ingredients/Palkova.jpg',
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
@@ -21,7 +21,7 @@ const products = [
         name: 'Kovilpatti Kadalamittai',
         href: '#',
         price: '$89',
-        imageSrc: '/food1.jpg',
+        imageSrc: '/Ingredients/Palkova.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
@@ -29,7 +29,7 @@ const products = [
         name: 'Butter Chicken',
         href: '/dishes/butterchicken',
         price: '$35',
-        imageSrc: '/food3.jpg',
+        imageSrc: '/Ingredients/Palkova.jpg',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
 ]

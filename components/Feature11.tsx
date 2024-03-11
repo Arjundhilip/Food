@@ -6,7 +6,7 @@ const products = [
         name: 'Coimbatore',
         href: '#',
         price: '$48',
-        imageSrc: '/districts/Coimbatore.png',
+        imageSrc: '/districts/sq_districts/coimbatore.png',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
@@ -14,7 +14,7 @@ const products = [
         name: 'Coimbatore',
         href: '#',
         price: '$35',
-        imageSrc: '/districts/Coimbatore.png',
+        imageSrc: '/districts/sq_districts/coimbatore.png',
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
@@ -22,7 +22,7 @@ const products = [
         name: 'Coimbatore',
         href: '#',
         price: '$89',
-        imageSrc: '/districts/Coimbatore.png',
+        imageSrc: '/districts/sq_districts/coimbatore.png',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
@@ -30,7 +30,7 @@ const products = [
         name: 'Coimbatore',
         href: '/dishes/butterchicken',
         price: '$35',
-        imageSrc: '/districts/Coimbatore.png',
+        imageSrc: '/districts/sq_districts/coimbatore.png',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
 ]
