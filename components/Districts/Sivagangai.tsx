@@ -48,13 +48,13 @@ const geo = [
         heading: 'Area',
         role: 'Total of 4241.0 Sq.Kms',
         imageUrl1:
-            'public/person-2.png',
+            '/person-2.png',
     },
     {
         heading: 'Boundaries',
         role: 'Bounded by Kerala State to the West, Madurai and Sivagangai districts to the North, Ramanathapuram District to the East, and Tirunelveli, Thoothukudi, and Tenkasi Districts to the South.',
         imageUrl1:
-            'public/person-2.png',
+            '/person-2.png',
     },
 ]
 
@@ -63,19 +63,19 @@ const climate = [
         heading: 'Climate',
         role: 'Hot and dry weather prevails for about 9 months.',
         imageUrl1:
-            'public/person-2.png',
+            '/person-2.png',
     },
     {
         heading: 'Rainfall',
         role: 'Normally experiences deficit rainfall.',
         imageUrl1:
-            'public/person-2.png',
+            '/person-2.png',
     },
     {
         heading: 'Annual rainfall',
         role: '862.4 m.m.',
         imageUrl1:
-            'public/person-2.png',
+            '/person-2.png',
     },
 ]
 
@@ -83,17 +83,17 @@ const pop = [
     {
     heading: 'Total Population',
     role: '19,43,309',        
-    imageUrl1:'/archive/totalpopulation.png',
+    imageUrl1:'/person-2.png',
     },
     {
     heading: 'Sex Ratio',
     role: '1007/1000',        
-    imageUrl1:'/archive/sexratio.png',
+    imageUrl1:'/person-2.png',
     },
     {
     heading: 'Litearcy',
     role: '80.15%',        
-    imageUrl1:'/archive/literacy.png',
+    imageUrl1:'/person-2.png',
     },
     ]
     

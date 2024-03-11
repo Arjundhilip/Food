@@ -41,7 +41,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'Dessert',
         imageUrl:
-            'public/person-2.png',
+            '/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -69,7 +69,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'Srivilliputhur',
         imageUrl:
-            'public/person-2.png',
+            '/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -79,7 +79,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'Tamil Nadu',
         imageUrl:
-            'public/person-2.png',
+            '/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -89,7 +89,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'India',
         imageUrl:
-            'public/person-2.png',
+            '/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -99,7 +99,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'Tamil, English',
         imageUrl:
-            'public/person-2.png',
+            '/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
