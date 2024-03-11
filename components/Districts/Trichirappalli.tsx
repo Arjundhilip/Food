@@ -47,14 +47,12 @@ const geo = [
     {
         heading: 'Area',
         role: 'Total of 4241.0 Sq.Kms',
-        imageUrl1:
-            '/person-2.png',
+        imageUrl1: '/person-2.png',
     },
     {
         heading: 'Boundaries',
         role: 'Bounded by Kerala State to the West, Madurai and Sivagangai districts to the North, Ramanathapuram District to the East, and Tirunelveli, Thoothukudi, and Tenkasi Districts to the South.',
-        imageUrl1:
-            '/person-2.png',
+        imageUrl1: '/person-2.png',
     },
 ]
 
@@ -62,20 +60,17 @@ const climate = [
     {
         heading: 'Climate',
         role: 'Hot and dry weather prevails for about 9 months.',
-        imageUrl1:
-            '/person-2.png',
+        imageUrl1: '/person-2.png',
     },
     {
         heading: 'Rainfall',
         role: 'Normally experiences deficit rainfall.',
-        imageUrl1:
-            '/person-2.png',
+        imageUrl1: '/person-2.png',
     },
     {
         heading: 'Annual rainfall',
         role: '862.4 m.m.',
-        imageUrl1:
-            '/person-2.png',
+        imageUrl1: '/person-2.png',
     },
 ]
 
