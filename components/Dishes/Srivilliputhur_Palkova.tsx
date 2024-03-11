@@ -439,8 +439,8 @@ const Srivilliputhur_Palkova = () => {
                                 />
                             </div>
                             <h2 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Ingredients</h2>
-                            {ingredients.map((ingredient, index) => (
-                                <div className="my-2 space-y-6">
+                            {ingredients.map((ingredient: Ingredient, index: number) => (
+                                <div key={index} className="my-2 space-y-6">
                                     <div className="relative flex gap-x-3">
                                         <div className="flex h-6 items-center">
                                             <input
@@ -452,12 +452,14 @@ const Srivilliputhur_Palkova = () => {
                                         </div>
 
                                         <div className="text-sm leading-6">
-                                            <a key={index} className="text-gray-700">
+                                            <a className="text-gray-700">
                                                 {`${(ingredient.quantity) * numServings} ${ingredient.unit} ${ingredient.name}`}
                                             </a>
                                         </div>
                                     </div>
-                                </div>))}
+                                </div>
+                            ))}
+
                         </div>
 
                         <h3 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Instructions</h3>
