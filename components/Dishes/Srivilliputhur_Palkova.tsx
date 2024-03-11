@@ -41,7 +41,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'Dessert',
         imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -69,7 +69,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'Srivilliputhur',
         imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -79,7 +79,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'Tamil Nadu',
         imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -89,7 +89,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'India',
         imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -99,7 +99,7 @@ const people = [
         email: 'leslie.alexander@example.com',
         role: 'Tamil, English',
         imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
         lastSeen: '3h ago',
         lastSeenDateTime: '2023-01-23T13:23Z',
     },
@@ -191,7 +191,7 @@ const Srivilliputhur_Palkova = () => {
                     {people.map((person) => (
                         <li key={person.email} className="flex justify-between gap-x-6 py-5">
                             <div className="flex min-w-0 gap-x-4">
-                                {/* <img className="hidden shrink-0 sm:flex sm:flex-col sm:items-end h-6 w-6 flex-none rounded-full bg-gray-50" src={person.imageUrl} alt="" /> */}
+                                {/* <Image className="hidden shrink-0 sm:flex sm:flex-col sm:items-end h-6 w-6 flex-none rounded-full bg-gray-50" src={person.imageUrl} alt="" /> */}
                                 <div className="min-w-0 flex-auto">
                                     <p className="text-sm font-semibold leading-6 text-gray-900">{person.name}</p>
                                 </div>
@@ -439,7 +439,7 @@ const Srivilliputhur_Palkova = () => {
                                 />
                             </div>
                             <h2 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Ingredients</h2>
-                            {ingredients.map((ingredient: Ingredient, index: number) => (
+                            {ingredients.map((ingredient, index: number) => (
                                 <div key={index} className="my-2 space-y-6">
                                     <div className="relative flex gap-x-3">
                                         <div className="flex h-6 items-center">

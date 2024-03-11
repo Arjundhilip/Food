@@ -48,13 +48,13 @@ const geo = [
         heading: 'Area',
         role: 'Total of 4241.0 Sq.Kms',
         imageUrl1:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
     },
     {
         heading: 'Boundaries',
         role: 'Bounded by Kerala State to the West, Madurai and Sivagangai districts to the North, Ramanathapuram District to the East, and Tirunelveli, Thoothukudi, and Tenkasi Districts to the South.',
         imageUrl1:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
     },
 ]
 
@@ -63,19 +63,19 @@ const climate = [
         heading: 'Climate',
         role: 'Hot and dry weather prevails for about 9 months.',
         imageUrl1:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
     },
     {
         heading: 'Rainfall',
         role: 'Normally experiences deficit rainfall.',
         imageUrl1:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
     },
     {
         heading: 'Annual rainfall',
         role: '862.4 m.m.',
         imageUrl1:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'public/person-2.png',
     },
 ]
 
@@ -156,7 +156,7 @@ const Kallakurichi = () => {
                     <div className="mt-4">
                         {geo.map((person, index) => (
                             <div key={index} className="flex items-center py-4">
-                                <img
+                                <Image
                                     className="h-10 w-10 rounded-full object-cover mr-4"
                                     src={person.imageUrl1}
                                     alt={person.heading}
@@ -178,7 +178,7 @@ const Kallakurichi = () => {
                     <div className="mt-4">
                         {climate.map((person, index) => (
                             <div key={index} className="flex items-center py-4">
-                                <img
+                                <Image
                                     className="h-10 w-10 rounded-full object-cover mr-4"
                                     src={person.imageUrl1}
                                     alt={person.heading}
@@ -200,7 +200,7 @@ const Kallakurichi = () => {
                     <div className="mt-4">
                         {pop.map((person, index) => (
                             <div key={index} className="flex items-center py-4">
-                                <img
+                                <Image
                                     className="h-10 w-10 rounded-full object-cover mr-4"
                                     src={person.imageUrl1}
                                     alt={person.heading}

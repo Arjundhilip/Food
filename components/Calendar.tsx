@@ -17,6 +17,7 @@ import {
   startOfToday,
 } from 'date-fns'
 import { Fragment, useState } from 'react'
+import Image from 'next/image'
 
 interface MeetingProps {
   meeting: {
@@ -34,8 +35,7 @@ const meetings = [
     id: 1,
     name:'Foodname',
     festival:'Festival',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    imageUrl:'public/person-3.png',
     "startDatetime": "2024-03-10T13:00",
     "endDatetime": "2022-05-11T14:30"
   },
@@ -45,7 +45,7 @@ const meetings = [
     name:'Foodname',
     festival:'Festival',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      'public/person-3.png',
     "startDatetime": "2024-03-10T13:00",
     "endDatetime": "2022-05-11T14:30"
   },
@@ -55,7 +55,7 @@ const meetings = [
     name:'Fathima',
     festival:'Birthday',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      'public/person-3.png',
     "startDatetime": "2024-04-14T13:00",
     "endDatetime": "2024-04-15T13:00",
   },
@@ -222,10 +222,12 @@ function Meeting({ meeting }: MeetingProps) {
 
   return (
     <li className="flex items-center px-4 py-2 space-x-4 group rounded-xl focus-within:bg-gray-100 hover:bg-gray-100">
-      <img
+      <Image
         src={meeting.imageUrl}
         alt=""
         className="flex-none w-10 h-10 rounded-full"
+        width={100}
+        height={100}
       />
       <div className="flex-auto">
         <p className="text-gray-900">{meeting.name}</p>
