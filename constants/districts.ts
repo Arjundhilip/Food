@@ -46,7 +46,7 @@ export const districts = [
     },
     { 
         name: 'Kancheepuram', 
-        href: '/districts/kanchipuram', 
+        href: '/districts/Kancheepuram', 
         imageUrl: '/districts/sq_districts/kanchipuram.png' 
     },
     { 
@@ -111,7 +111,7 @@ export const districts = [
     },
     { 
         name: 'Sivagangai', 
-        href: '/districts/sivaganga', 
+        href: '/districts/sivagangai', 
         imageUrl: '/districts/sq_districts/sivaganga.png' 
     },
     { 
@@ -131,8 +131,8 @@ export const districts = [
     },
     { 
         name: 'Thiruvallur', 
-        href: '/districts/thiruvalllur', 
-        imageUrl: '/districts/sq_districts/thiruvalllur.png' 
+        href: '/districts/thiruvallur', 
+        imageUrl: '/districts/sq_districts/thiruvallur.png' 
     },
     { 
         name: 'Thiruvarur', 
