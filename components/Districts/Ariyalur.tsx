@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/20/solid'
 
-import { agri, climate, dist, geo, pop, popular, signature } from '@/constants/districts/ariyalur'
+import { first, agri, climate, dist, geo, pop, popular, signature } from '@/constants/districts/ariyalur'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -25,20 +25,21 @@ const Ariyalur = () => {
                     height={300}
                     className='flex flex-1 items-center justify-end rounded-xl' />
             </div>
+            {first.map((person, index) => (
+                <div key={index}>
+                    <div className=" mx-auto place-content-center max-w-full px-4 sm:px-40 sm:mt-10 sm:mb-5 lg:px-40 " >
+                        <h2 className="text-base font-semibold leading-7 text-indigo-600">{person.tamilheading}</h2>
+                        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{person.topic}</p>
+                    </div>
 
-            <div className=" mx-auto place-content-center max-w-full px-4 sm:px-40 sm:mt-10 sm:mb-5 lg:px-40 " >
-                <h2 className="text-base font-semibold leading-7 text-indigo-600">விருதுநகர்</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Virudhunagar</p>
-            </div>
-
-            <dl className="mx-auto place-content-center max-w-full px-4 sm:px-40  sm:mb-5 sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-1">
-                <div className=" text-left mx-auto flex max-w-full flex-col gap-y-4">
-                    <dt className="mb-2 text-justify text-base leading-7 text-gray-600" >Srivilliputhur Palkova is a decadent traditional sweet from Srivilliputhur, Tamil Nadu.
-                        This luscious milk-based delicacy is known for its rich texture and sweet flavor. Also called Thirattipal, it is a popular dairy product originating from Tamil Nadu,
-                        prepared by continuous stirring to concentrate the ingredients and coagulating milk with sour curd.
-                    </dt>
+                    <dl className="mx-auto place-content-center max-w-full px-4 sm:px-40  sm:mb-5 sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-1">
+                        <div className=" text-left mx-auto flex max-w-full flex-col gap-y-4">
+                            <dt className="mb-2 text-justify text-base leading-7 text-gray-600" >{person.des}
+                            </dt>
+                        </div>
+                    </dl>
                 </div>
-            </dl>
+            ))}
 
             <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
                 <Image
@@ -145,6 +146,21 @@ const Ariyalur = () => {
 
             </div>
 
+
+
+            <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
+                <Image
+                    src="/districts/multimedia/virudhunagar.png"
+                    alt="Map of virudhunagar"
+                    style={{
+                        width: '100%',
+                        height: 'auto',
+                    }}
+                    width={500}
+                    height={300}
+                    className='flex flex-1 items-center justify-end rounded-xl' />
+            </div>
+
             {dist.map((person, index) => (
                 <div key={index}>
 
@@ -158,6 +174,7 @@ const Ariyalur = () => {
                             </dt>
                         </div>
                     </dl>
+
 
                 </div>
             ))}
@@ -191,7 +208,7 @@ const Ariyalur = () => {
             <div className="mt-5 mb-5 place-content-center max-w-full px-40">
                 <div className="bg-white">
                     <div className=" max-w-2xl px-4  sm:px-6  mb-8 lg:max-w-7xl lg:px-8">
-                        <h1 className="my-4 text-center text-lg font-semibold tracking-tight text-gray-900 sm:text-5xl">Signature Dishes</h1>
+                        <h1 className="my-4 text-center text-md font-semibold tracking-tight text-gray-900 sm:text-3xl">Signature Dishes</h1>
                         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
                             {signature.map((product) => (
                                 <a key={product.id} href={product.href} className="group">
@@ -215,7 +232,7 @@ const Ariyalur = () => {
             <div className="mt-5 mb-5 place-content-center max-w-full px-40">
                 <div className="bg-white">
                     <div className=" max-w-2xl px-4  sm:px-6  mb-8 lg:max-w-7xl lg:px-8">
-                        <h1 className="my-4 text-center text-lg font-semibold tracking-tight text-gray-900 sm:text-5xl">Popular Dishes</h1>
+                        <h1 className="my-4 text-center text-md font-semibold tracking-tight text-gray-900 sm:text-3xl">Popular Dishes</h1>
                         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
                             {popular.map((product) => (
                                 <a key={product.id} href={product.href} className="group">

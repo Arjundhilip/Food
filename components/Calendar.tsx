@@ -35,7 +35,7 @@ const meetings = [
     id: 1,
     name:'Foodname',
     festival:'Festival',
-    imageUrl:'public/person-3.png',
+    imageUrl:'/person-3.png',
     "startDatetime": "2024-03-10T13:00",
     "endDatetime": "2022-05-11T14:30"
   },
@@ -45,7 +45,7 @@ const meetings = [
     name:'Foodname',
     festival:'Festival',
     imageUrl:
-      'public/person-3.png',
+      '/person-3.png',
     "startDatetime": "2024-03-10T13:00",
     "endDatetime": "2022-05-11T14:30"
   },
@@ -55,7 +55,7 @@ const meetings = [
     name:'Fathima',
     festival:'Birthday',
     imageUrl:
-      'public/person-3.png',
+      '/person-3.png',
     "startDatetime": "2024-04-14T13:00",
     "endDatetime": "2024-04-15T13:00",
   },
