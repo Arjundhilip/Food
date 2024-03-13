@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import Link from "next/link"
 import Image from 'next/image'
 
 const Footer = () => {
@@ -6,27 +7,23 @@ const Footer = () => {
 
 
     <footer className="bg-white dark:bg-white bottom-0 left-0 right-0">
-      <div className="container px-6 py-8">
+      <div className="container px-6 py-8  padding-container relative z-50">
+        
         <div className="flex flex-col items-center text-center mt-18">
           <a href="#">
           <Image
                     src="/vercel.svg"
                     alt="Map of virudhunagar"
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                    }}
                     width={500}
                     height={300}
                     className="w-auto h-7 md:my-5" />
             
           </a>
 
-          <div className="flex flex-wrap justify-center mt-6 -mx-4">
-            <a href="#" className="mx-4 text-sm font-semibold leading-6 text-gray-900" aria-label="Reddit"> 10966 <br /> <strong>TRADITIONAL DISHES</strong> </a>
-            <a href="#" className="mx-4 text-sm font-semibold leading-6 text-gray-900" aria-label="Reddit"> 10966 <br /> <strong>TRADITIONAL DISHES</strong> </a>
-            <a href="#" className="mx-4 text-sm font-semibold leading-6 text-gray-900" aria-label="Reddit"> 10966 <br /> <strong>TRADITIONAL DISHES</strong> </a>
-            <a href="#" className="mx-4 text-sm font-semibold leading-6 text-gray-900" aria-label="Reddit"> 10966 <br /> <strong>TRADITIONAL DISHES</strong> </a>
+          <div className="flex flex-wrap justify-between mt-6 -mx-4">
+            <a href="#" className="mx-4 text-sm font-semibold leading-6 text-gray-900" aria-label="Reddit"> 10966 <br /> <strong>SIGNATURE DISHES</strong> </a>
+            <a href="#" className="mx-4 text-sm font-semibold leading-6 text-gray-900" aria-label="Reddit"> 10966 <br /> <strong>POPULAR DISHES</strong> </a>
+            
 
           </div>
         </div>
@@ -34,14 +31,18 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
+        <p className="text-sm text-gray-500 dark:text-gray-700">© Copyright 2021. All Rights Reserved.</p>
           <div className="-mx-2 flex">
-            <p className="text-sm text-gray-500 dark:text-gray-700 mx-2">About</p>
+          <Link href="/about" className="text-sm text-gray-500 dark:text-gray-700 mx-2">
+            About
+          </Link>
+            
             <p className="text-sm text-gray-500 dark:text-gray-700 mx-2">Site map</p>
             <p className="text-sm text-gray-500 dark:text-gray-700 mx-2">Privacy</p>
             <p className="text-sm text-gray-500 dark:text-gray-700 mx-2">Terms & Conditions</p>
           </div>
 
-          <p className="text-sm text-gray-500 dark:text-gray-700">© Copyright 2021. All Rights Reserved.</p>
+          
 
           <div className="-mx-2 flex">
           <p className="text-sm text-gray-500 dark:text-gray-700">Follow us on</p>

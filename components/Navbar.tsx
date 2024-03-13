@@ -63,9 +63,9 @@ const Navbar = () => {
         {/*Links*/}
         <Popover.Group className="hidden lg:flex lg:gap-x-12 ">
 
-          <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+          {/* <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900">
             About
-          </Link>
+          </Link> */}
 
           <Link href="/map" className="text-sm font-semibold leading-6 text-gray-900">
             Map
@@ -252,12 +252,12 @@ const Navbar = () => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
+                {/* <a
                   href="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-10"
                 >
                   About
-                </a>
+                </a> */}
 
                 <a
                   href="/map"
