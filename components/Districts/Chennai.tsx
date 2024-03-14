@@ -196,12 +196,14 @@ const Chennai = () => {
                 </div>
             ))}
 
-            <div className="max-container relative flex  w-full flex-col justify-between overflow-hidden bg-white bg-cover  lg:px-20">
-                <div className="mx-auto max-w-2xl px-4 py-2 sm:px-6 sm:py-2 mb-8 lg:max-w-7xl lg:px-8">
-                    <h1 className="mt-4  text-xl font-semibold text-gray-900 sm:text-5xl">Culinary Delights</h1>
+
+            <div className="max-container relative w-full flex-col justify-between overflow-hidden bg-white bg-cover  lg:px-20">
+
+                <div className="mx-auto max-w-2xl px-4 py-2 sm:px-6 sm:py-2 mb-8 lg:max-w-7xl lg:px-8 text-center">
+                    <h1 className="mt-4  text-xl font-semibold sm:text-5xl">Culinary Delights</h1>
                 </div>
-                <h1 className="my-4 text-center text-md tracking-tight  sm:text-3xl">Signature Dishes</h1>
-                <div className="mb-8 grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
+                <h2 className="my-4 text-center text-md tracking-tight sm:text-3xl">Signature Dishes</h2>
+                <div className="mb-8 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
                     {signature.map((product) => (
                         <a key={product.id} href={product.href} className="group">
                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
@@ -217,7 +219,7 @@ const Chennai = () => {
                         </a>
                     ))}
                 </div>
-                <h1 className="my-4 text-center text-md font-semibold tracking-tight text-gray-900 sm:text-3xl">Popular Dishes</h1>
+                <h2 className="my-4 text-center text-md tracking-tight sm:text-3xl">Popular Dishes</h2>
                 <div className="mb-8 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
                     {signature.map((product) => (
                         <a key={product.id} href={product.href} className="group">
@@ -331,7 +333,7 @@ const Chennai = () => {
 
             </div> */}
 
-            
+
 
 
 
