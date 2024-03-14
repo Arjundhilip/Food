@@ -21,7 +21,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
       >
         <h2 className="text-lg font-bold">{title}</h2>
         <svg
-          className={`w-6 h-6 ${isOpen ? "transform rotate-180" : ""}`}
+          className={`w-6 h-6 transition-transform ${isOpen ? "transform rotate-45" : ""}`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

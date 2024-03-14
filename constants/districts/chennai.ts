@@ -1,8 +1,8 @@
 export const first = [
     {
-        tamilheading: 'விருதுநகர்',
-        topic: 'Ariyalur',
-        des: 'Srivilliputhur Palkova is a decadent traditional sweet from Srivilliputhur, Tamil Nadu.This luscious milk-based delicacy is known for its rich texture and sweet flavor. Also called Thirattipal, it is a popular dairy product originating from Tamil Nadu,prepared by continuous stirring to concentrate the ingredients and coagulating milk with sour curd.',
+        tamilheading: 'சென்னை',
+        topic: 'Chennai',
+        des: 'The name Chennai was derived from the name of Chennappa Nayaka, a Nayak ruler who served as a general under Venkata Raya of the Vijayanagara Empire from whom the British East India Company acquired the town in 1639.The first official use of the name was in August 1639 in a sale deed to Francis Day of the East India Company.A land grant was given to the Chennakesava Perumal Temple in Chennapatanam later in 1646, which some scholars argue to be the first use of the name.',
     },
 ]
 
