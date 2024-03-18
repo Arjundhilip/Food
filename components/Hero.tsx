@@ -2,6 +2,9 @@ import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
 
+
+
+
 const Hero = () => {
   return (
 
@@ -31,14 +34,16 @@ const Hero = () => {
         </div>
 
         <Image
-        src="/herofood.jpeg" 
-        alt="phones" 
-        width={550} 
-        height={870} 
-        className='flex flex-1 items-center justify-end rounded-xl' />
+          src='/herofood.jpeg'
+          alt='Food'
+          width={550}
+          height={870}
+          className='flex flex-1 items-center justify-end rounded-xl' />
+
+
       </div>
     </section>
-    
+
   )
 }
 

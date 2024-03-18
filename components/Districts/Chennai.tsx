@@ -4,16 +4,11 @@ import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { first, agri, climate, dist, geo, pop, popular, signature } from '@/constants/districts/chennai'
 import Accordion from "../Accordion";
-
-
 import Button from '../Button'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
 }
-
-
-
 
 
 const Chennai = () => {
@@ -24,8 +19,8 @@ const Chennai = () => {
                     {first.map((person, index) => (
                         <div key={index}>
                             <div className="" >
-                                <h2 className="text-base font-semibold leading-7 text-indigo-600">{person.tamilheading}</h2>
-                                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{person.topic}</p>
+                                <h2 className="text-base font-semibold leading-7 text-gray-900">{person.tamilheading}</h2>
+                                <p className="mt-2 text-3xl font-bold tracking-tight text-[#BE1E2D] sm:text-4xl">{person.topic}</p>
                             </div>
 
                             <dl className="">
@@ -168,9 +163,9 @@ const Chennai = () => {
             </div>
 
 
-            <div className="max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20">
+            <div className="mb-4 max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20">
                 <Image
-                    src="/districts/multimedia/virudhunagar.png"
+                    src="/districts/Chennai/Chennai_info.jpg"
                     alt="Map of virudhunagar"
                     style={{
                         width: '100%',
@@ -178,19 +173,18 @@ const Chennai = () => {
                     }}
                     width={500}
                     height={300}
-                    className='flex flex-1 items-center justify-end rounded-xl' />
+                    className='flex flex-1 items-center justify-end rounded-xl'/>
             </div>
 
             {dist.map((person, index) => (
                 <div key={index}>
                     <div className=" max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20 " >
-                        <p className="mt-2 text-xl font-semibold tracking-tight text-gray-900 sm:text-4xl">{person.heading}</p>
+                        <p className="mt-2 text-lg font-semibold tracking-tight text-[#BE1E2D] sm:text-2xl">{person.heading}</p>
                     </div>
 
                     <dl className="max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20  sm:mb-5 sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-1">
                         <div className=" text-left mx-auto flex max-w-full flex-col gap-y-4">
-                            <dt className="mb-2 text-justify text-base leading-7 text-gray-600" >{person.description}
-                            </dt>
+                            <dt className="mb-2 text-justify text-base leading-7 text-gray-600" >{person.description}</dt>
                         </div>
                     </dl>
                 </div>
@@ -237,7 +231,6 @@ const Chennai = () => {
                     ))}
                 </div>
             </div>
-
 
 
 
