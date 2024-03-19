@@ -56,7 +56,7 @@ export default function Example() {
                 <div className="max-w-sm rounded-xl overflow-hidden shadow-lg">
                   <div className="relative">
                     <Image
-                      src="/food3.png"
+                      src="/districts/infographics/11123117778.png"
                       alt="phones"
                       width={800}
                       height={340}

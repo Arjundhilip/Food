@@ -34,12 +34,11 @@ const Chennai = () => {
                 </div>
 
                 <Image
-                    src="/districts/Chennai/Chennai_1.jpg"
+                    src="/districts/Chennai/Chennai_3.png"
                     alt="phones"
-                    width={550}
-                    height={1000}
-                    className='flex flex-1 items-center justify-end rounded-xl  transition: transform 0.3s ease-in-out hover img {
-                        transform: scale(1.5)' />
+                    width={500}
+                    height={500}
+                    className='flex flex-1 items-center justify-end rounded-xl  transition: transform 0.3s ease-in-out hover img {transform: scale(1.5)' />
             </div>
 
             {/* <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
@@ -165,7 +164,7 @@ const Chennai = () => {
 
             <div className="mb-4 max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20">
                 <Image
-                    src="/districts/Chennai/Chennai_info.jpg"
+                    src="/districts/infographics/chennai.svg"
                     alt="Map of virudhunagar"
                     style={{
                         width: '100%',
@@ -173,7 +172,7 @@ const Chennai = () => {
                     }}
                     width={500}
                     height={300}
-                    className='flex flex-1 items-center justify-end rounded-xl'/>
+                    className='flex flex-1 items-center justify-end rounded-xl' />
             </div>
 
             {dist.map((person, index) => (
