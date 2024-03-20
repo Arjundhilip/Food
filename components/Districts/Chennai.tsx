@@ -296,7 +296,7 @@ const Chennai = () => {
             ))}
 
 
-            <div className="max-container relative w-full flex-col justify-between overflow-hidden bg-white bg-cover  lg:px-20">
+            {/* <div className="max-container relative w-full flex-col justify-between overflow-hidden bg-white bg-cover  lg:px-20">
 
                 <div className="mx-auto max-w-2xl px-4 py-2 sm:px-6 sm:py-2 mb-8 lg:max-w-7xl lg:px-8 text-center">
                     <h1 className="mt-4  text-xl font-semibold sm:text-5xl">Culinary Delights</h1>
@@ -335,7 +335,7 @@ const Chennai = () => {
                         </a>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
 
 
