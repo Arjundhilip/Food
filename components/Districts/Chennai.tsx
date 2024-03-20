@@ -132,7 +132,7 @@ const Chennai = () => {
 
                 </div>
 
-                <div className='mb-5 mt-20 aspect-h-9 aspect-w-6 border-2 rounded-lg '>
+                <div className='mb-5 mt-20 aspect-h-9 aspect-w-6 rounded-lg '>
                     <Image
                         src="/districts/Chennai/Chennai_3.png"
                         alt="phones"
@@ -281,7 +281,7 @@ const Chennai = () => {
                     className='flex flex-1 items-center justify-end rounded-xl' />
             </div>
 
-            {dist.map((person, index) => (
+            {/* {dist.map((person, index) => (
                 <div key={index}>
                     <div className=" max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20 " >
                         <p className="mt-2 text-lg font-semibold tracking-tight text-[#BE1E2D] sm:text-2xl">{person.heading}</p>
@@ -293,10 +293,10 @@ const Chennai = () => {
                         </div>
                     </dl>
                 </div>
-            ))}
+            ))} */}
 
 
-            {/* <div className="max-container relative w-full flex-col justify-between overflow-hidden bg-white bg-cover  lg:px-20">
+            <div className="max-container relative w-full flex-col justify-between overflow-hidden bg-white bg-cover  lg:px-20">
 
                 <div className="mx-auto max-w-2xl px-4 py-2 sm:px-6 sm:py-2 mb-8 lg:max-w-7xl lg:px-8 text-center">
                     <h1 className="mt-4  text-xl font-semibold sm:text-5xl">Culinary Delights</h1>
@@ -335,7 +335,7 @@ const Chennai = () => {
                         </a>
                     ))}
                 </div>
-            </div> */}
+            </div>
 
 
 
