@@ -15,20 +15,20 @@ const Hero = () => {
           {/* <p className="regular-16 text-green-70">Available on iOS and Android</p> */}
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
 
-            <Button
+            {/* <Button
               type="button"
               title="App Store"
               icon="/apple.svg"
               variant="btn_dark_green_outline"
               full
-            />
+            /> */}
 
             <Button
               type="button"
-              title="Play Store"
-              icon="/android.svg"
+              title="Read more"
+              // icon="/android.svg"
               variant="btn_green"
-              full
+            
             />
           </div>
         </div>

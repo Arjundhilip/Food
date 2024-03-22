@@ -98,27 +98,13 @@ export const agri = [
     },
 ]
 
-export const dist = [
+export const industries = [
     {
-        heading: 'Culture and Heritage',
-        description: 'Ariyalur has a rich cultural heritage with significant historical landmarks, including temples and monuments that showcase the architectural brilliance of past civilizations. The districts culture is a reflection of its diverse historical influences, from the Cholas to the British',   
+        heading: 'Automobile, Medical Tourism, SAAS, and Hardware Manufacturing',
+        // role:  'Automobile, Medical Tourism, SAAS, and Hardware Manufacturing',
+        imageUrl1: '/icons/maincrops.png',
     },
-    {
-        heading: 'Economy and Industries',
-        description: 'The economy of Ariyalur is predominantly industrial, with cement production being the major sector. The district houses several major cement factories, leveraging its rich limestone reserves. Other industries include agriculture, with sugarcane and cashew as key crops.',   
-    },
-    {
-        heading: 'Tourism Attractions',
-        description: 'Gangaikonda Cholapuram, a UNESCO World Heritage Site in Tamil Nadu, stands as a testament to the architectural brilliance of the Chola dynasty, particularly under Rajendra Chola reign in the 11th century. This ancient capital city showcases majestic temples, intricately carved pillars, and elaborate sculptures, reflecting the cultural and artistic zenith of the Chola Empire. Nearby, the Karaivetti Bird Sanctuary offers a tranquil haven for birdwatchers and nature enthusiasts, boasting diverse avian species against the picturesque backdrop of Karaivetti Lake. Elakurichi Church, nestled in the Ariyalur district, beckons pilgrims with its storied history and spiritual significance, while the Sundareswarar Temple at Kamarasavalli enchants visitors with its historical inscriptions and magnificent sculptures dedicated to Lord Shiva, embodying the rich heritage and religious fervor of Tamil Nadu.',   
-    },
-    {
-        heading: 'Historical Significance',
-        description: 'Ariyalur and its history is intertwined with the reigns of various dynasties, including the Cholas, Pandyas, and the British colonial period. It has been a site of significant historical events and battles.',   
-    },
-    {
-        heading: 'Cuisine and Culinary Tradition',
-        description: 'The cuisine of Ariyalur, like the rest of Tamil Nadu, is rich in flavors, with rice as the staple food. Traditional dishes include various vegetarian and non-vegetarian options, emphasizing local spices and ingredients.',   
-    },
+   
 ]
 
 export const signature = [
@@ -156,7 +142,6 @@ export const signature = [
     },
 
 ]
-
 
 export const popular = [
     {

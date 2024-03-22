@@ -12,15 +12,15 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center mt-18">
           <a href="#">
           <Image
-                    src="/vercel.svg"
+                    src="/logo.png"
                     alt="Map of virudhunagar"
-                    width={500}
-                    height={300}
-                    className="w-auto h-7 md:my-5" />
+                    width={300} 
+                    height={70}
+                    className="w-auto aspect-[16/9]" />
             
           </a>
 
-          <div className="flex flex-wrap justify-between mt-6 -mx-4">
+          <div className="flex flex-wrap justify-between mt-0 -mx-4">
             <a href="#" className="mx-4 text-sm font-semibold leading-6 text-gray-900" aria-label="Reddit"> 10966 <br /> <strong>SIGNATURE DISHES</strong> </a>
             <a href="#" className="mx-4 text-sm font-semibold leading-6 text-gray-900" aria-label="Reddit"> 10966 <br /> <strong>POPULAR DISHES</strong> </a>
             

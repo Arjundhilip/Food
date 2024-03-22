@@ -1,10 +1,8 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { StarIcon } from '@heroicons/react/20/solid'
-import { first, agri, climate, dist, geo, pop, popular, signature } from '@/constants/districts/chennai'
+import { first, agri, climate, geo, industries, pop, popular, signature  } from '@/constants/districts/chennai'
 import Accordion from "../Accordion";
-import Button from '../Button'
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -14,6 +12,7 @@ function classNames(...classes: any[]) {
 const Chennai = () => {
     return (
         <section>
+            
             <div className=" max-container flex w-full flex-col justify-between gap-32 bg-white bg-cover bg-center bg-no-repeat px-6 py-12 text-black sm:flex-row sm:gap-12 sm:py-8 lg:px-20 2xl:rounded-5xl">
                 <div className="z-20 flex w-full flex-1 flex-col items-start justify-normal  gap-6">
                     {first.map((person, index) => (
@@ -110,11 +109,11 @@ const Chennai = () => {
                             </div>
                         </Accordion>
                         <Accordion title="Industries">
-                            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                                {agri.map((person, index) => (
+                            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-1">
+                                {industries.map((person, index) => (
                                     <div key={index} className="flex items-top py-4">
                                         <Image
-                                            className="h-10 w-10 rounded-full object-cover mr-4"
+                                            className="h-8 w-8 rounded-full object-cover mr-4"
                                             src={person.imageUrl1}
                                             alt={person.heading}
                                             width={50}
@@ -122,7 +121,7 @@ const Chennai = () => {
                                         />
                                         <div className=''>
                                             <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                            <p className="text-sm text-gray-600">{person.role}</p>
+                                            
                                         </div>
                                     </div>
                                 ))}
@@ -147,127 +146,6 @@ const Chennai = () => {
 
             </div>
 
-            {/* <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
-                <Image
-                    src="/districts/Collage/virudhunagar.png"
-                    alt="Collage of Dist"
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                    }}
-                    width={500}
-                    height={300}
-                    className='flex flex-1 items-center justify-end rounded-xl' />
-            </div>
-            {first.map((person, index) => (
-                <div key={index}>
-                    <div className=" mx-auto place-content-center max-w-full px-4 sm:px-40 sm:mt-10 sm:mb-5 lg:px-40 " >
-                        <h2 className="text-base font-semibold leading-7 text-indigo-600">{person.tamilheading}</h2>
-                        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{person.topic}</p>
-                    </div>
-
-                    <dl className="mx-auto place-content-center max-w-full px-4 sm:px-40  sm:mb-5 sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-1">
-                        <div className=" text-left mx-auto flex max-w-full flex-col gap-y-4">
-                            <dt className="mb-2 text-justify text-base leading-7 text-gray-600" >{person.des}
-                            </dt>
-                        </div>
-                    </dl>
-                </div>
-            ))}
-
-            <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
-                <Image
-                    src="/districts/ls_districts/virudhunagar.jpg"
-                    alt="Map of virudhunagar"
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                    }}
-                    width={500}
-                    height={300}
-                    className='flex flex-1 items-center justify-end rounded-xl' />
-            </div> */}
-
-            {/* <div className='max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20'>
-                <Accordion title="Geographical Features">
-                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                        {geo.map((person, index) => (
-                            <div key={index} className="flex items-top py-4">
-                                <Image
-                                    className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl1}
-                                    alt={person.heading}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className=''>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                    <p className="w-96 text-sm text-gray-600">{person.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </Accordion>
-                <Accordion title="Climate and Rainfall">
-                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                        {climate.map((person, index) => (
-                            <div key={index} className="flex items-top py-4">
-                                <Image
-                                    className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl1}
-                                    alt={person.heading}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className=''>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                    <p className="text-sm text-gray-600">{person.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </Accordion>
-                <Accordion title="Population and Rainfall">
-                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                        {pop.map((person, index) => (
-                            <div key={index} className="flex items-top py-4">
-                                <Image
-                                    className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl1}
-                                    alt={person.heading}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className=''>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                    <p className="text-sm text-gray-600">{person.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </Accordion>
-                <Accordion title="Agriculture">
-                    <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                        {agri.map((person, index) => (
-                            <div key={index} className="flex items-top py-4">
-                                <Image
-                                    className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl1}
-                                    alt={person.heading}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className=''>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                    <p className="text-sm text-gray-600">{person.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </Accordion>
-            </div> */}
-
-
             <div className="max-container flex w-full flex-col justify-between  bg-white bg-cover px-6  lg:px-20">
                 <Image
                     src="/districts/infographics/chennai.svg"
@@ -280,21 +158,6 @@ const Chennai = () => {
                     height={300}
                     className='flex flex-1 items-center justify-end rounded-xl' />
             </div>
-
-            {/* {dist.map((person, index) => (
-                <div key={index}>
-                    <div className=" max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20 " >
-                        <p className="mt-2 text-lg font-semibold tracking-tight text-[#BE1E2D] sm:text-2xl">{person.heading}</p>
-                    </div>
-
-                    <dl className="max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover px-6  lg:px-20  sm:mb-5 sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-1">
-                        <div className=" text-left mx-auto flex max-w-full flex-col gap-y-4">
-                            <dt className="mb-2 text-justify text-base leading-7 text-gray-600" >{person.description}</dt>
-                        </div>
-                    </dl>
-                </div>
-            ))} */}
-
 
             <div className="max-container relative w-full flex-col justify-between overflow-hidden bg-white bg-cover  lg:px-20">
 
@@ -336,110 +199,6 @@ const Chennai = () => {
                     ))}
                 </div>
             </div>
-
-
-
-            {/* <div className='max-container relative flex w-full flex-col justify-between overflow-hidden bg-white bg-cover'>
-                <div className="my-2 max-w-xl px-6 text-black text-justify sm:flex-row lg:px-20">
-                    <h2 className="text-2xl font-bold mt-4">Geographical Features</h2>
-
-                    <div className="mt-4">
-                        {geo.map((person, index) => (
-                            <div key={index} className="flex items-center py-4">
-                                <Image
-                                    className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl1}
-                                    alt={person.heading}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className=''>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                    <p className="text-sm text-gray-600">{person.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                </div>
-
-                <div className="my-2 max-w-3xl px-6 text-black text-justify sm:flex-row lg:px-20">
-                    <h2 className="text-2xl font-bold mt-4">Climate and Rainfall</h2>
-
-                    <div className="mt-4">
-                        {climate.map((person, index) => (
-                            <div key={index} className="flex items-center py-4">
-                                <Image
-                                    className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl1}
-                                    alt={person.heading}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className=''>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                    <p className="text-sm text-gray-600">{person.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="my-2 max-w-3xl px-6 text-black text-justify sm:flex-row lg:px-20">
-                    <h2 className="text-2xl font-bold mt-4">Population and Rainfall</h2>
-
-                    <div className="mt-4">
-                        {pop.map((person, index) => (
-                            <div key={index} className="flex items-center py-4">
-                                <Image
-                                    className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl1}
-                                    alt={person.heading}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className=''>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                    <p className="text-sm text-gray-600">{person.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="my-2 max-w-3xl px-6 text-black text-justify sm:flex-row lg:px-20">
-                    <h2 className="text-2xl font-bold mt-4">Agriculture</h2>
-
-                    <div className="mt-4">
-                        {agri.map((person, index) => (
-                            <div key={index} className="flex items-center py-4">
-                                <Image
-                                    className="h-10 w-10 rounded-full object-cover mr-4"
-                                    src={person.imageUrl1}
-                                    alt={person.heading}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div className=''>
-                                    <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                    <p className="text-sm text-gray-600">{person.role}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-            </div> */}
-
-
-
-
-
-
-
-
-
-
 
         </section>
     )

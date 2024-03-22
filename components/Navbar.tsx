@@ -57,7 +57,7 @@ const Navbar = () => {
 
         {/*Logo*/}
         <Link href="/">
-          <Image src="/vercel.svg" alt="logo" width={70} height={70} />
+          <Image src="/logo.png" alt="logo" width={200} height={70} className="" />
         </Link>
 
         {/*Links*/}
