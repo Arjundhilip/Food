@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { first, agri, climate, geo, industries, pop, popular, signature  } from '@/constants/districts/chennai'
+import { first, agri, climate, geo, industries, pop, popular, signature } from '@/constants/districts/chennai'
 import Accordion from "../Accordion";
 
 function classNames(...classes: any[]) {
@@ -12,7 +12,7 @@ function classNames(...classes: any[]) {
 const Chennai = () => {
     return (
         <section>
-            
+
             <div className=" max-container flex w-full flex-col justify-between gap-32 bg-white bg-cover bg-center bg-no-repeat px-6 py-12 text-black sm:flex-row sm:gap-12 sm:py-8 lg:px-20 2xl:rounded-5xl">
                 <div className="z-20 flex w-full flex-1 flex-col items-start justify-normal  gap-6">
                     {first.map((person, index) => (
@@ -31,107 +31,10 @@ const Chennai = () => {
                         </div>
                     ))}
 
-                    <div className='max-container relative flex w-full flex-col justify-between bg-white bg-cover'>
-                        <Accordion title="Geographical Features">
-                            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                                {geo.map((person, index) => (
-                                    <div key={index} className="flex items-top py-4">
-                                        <Image
-                                            className="h-10 w-10 rounded-full object-cover mr-4"
-                                            src={person.imageUrl1}
-                                            alt={person.heading}
-                                            width={50}
-                                            height={50}
-                                        />
-                                        <div className=''>
-                                            <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                            <p className="w-96 text-sm text-gray-600">{person.role}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </Accordion>
-                        <Accordion title="Climate and Rainfall">
-                            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                                {climate.map((person, index) => (
-                                    <div key={index} className="flex items-top py-4">
-                                        <Image
-                                            className="h-10 w-10 rounded-full object-cover mr-4"
-                                            src={person.imageUrl1}
-                                            alt={person.heading}
-                                            width={50}
-                                            height={50}
-                                        />
-                                        <div className=''>
-                                            <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                            <p className="text-sm text-gray-600">{person.role}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </Accordion>
-                        <Accordion title="Population and Rainfall">
-                            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                                {pop.map((person, index) => (
-                                    <div key={index} className="flex items-top py-4">
-                                        <Image
-                                            className="h-10 w-10 rounded-full object-cover mr-4"
-                                            src={person.imageUrl1}
-                                            alt={person.heading}
-                                            width={50}
-                                            height={50}
-                                        />
-                                        <div className=''>
-                                            <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                            <p className="text-sm text-gray-600">{person.role}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </Accordion>
-                        <Accordion title="Agriculture">
-                            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
-                                {agri.map((person, index) => (
-                                    <div key={index} className="flex items-top py-4">
-                                        <Image
-                                            className="h-10 w-10 rounded-full object-cover mr-4"
-                                            src={person.imageUrl1}
-                                            alt={person.heading}
-                                            width={50}
-                                            height={50}
-                                        />
-                                        <div className=''>
-                                            <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                            <p className="text-sm text-gray-600">{person.role}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </Accordion>
-                        <Accordion title="Industries">
-                            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-1">
-                                {industries.map((person, index) => (
-                                    <div key={index} className="flex items-top py-4">
-                                        <Image
-                                            className="h-8 w-8 rounded-full object-cover mr-4"
-                                            src={person.imageUrl1}
-                                            alt={person.heading}
-                                            width={50}
-                                            height={50}
-                                        />
-                                        <div className=''>
-                                            <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
-                                            
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </Accordion>
-                    </div>
 
                 </div>
 
-                <div className='mb-5 mt-20 aspect-h-9 aspect-w-6 rounded-lg '>
+                <div className='w-[300px] rounded-lg '>
                     <Image
                         src="/districts/Chennai/Chennai_3.png"
                         alt="phones"
@@ -146,7 +49,146 @@ const Chennai = () => {
 
             </div>
 
-            <div className="max-container flex w-full flex-col justify-between  bg-white bg-cover px-6  lg:px-20">
+
+            <div className=" max-container flex w-full flex-col justify-between gap-32 bg-white bg-cover bg-center bg-no-repeat px-6 py-12 text-black sm:flex-row sm:gap-12 sm:py-8 lg:px-20 2xl:rounded-5xl">
+                <div className='max-container relative flex w-full flex-col justify-between bg-white bg-cover'>
+                    <Accordion title="Geographical Features">
+                        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
+                            {geo.map((person, index) => (
+                                <div key={index} className="flex items-top py-4">
+                                    <Image
+                                        className="h-10 w-10 rounded-full object-cover mr-4"
+                                        src={person.imageUrl1}
+                                        alt={person.heading}
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <div className=''>
+                                        <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
+                                        <p className="w-96 text-sm text-gray-600">{person.role}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </Accordion>
+                    <Accordion title="Climate and Rainfall">
+                        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
+                            {climate.map((person, index) => (
+                                <div key={index} className="flex items-top py-4">
+                                    <Image
+                                        className="h-10 w-10 rounded-full object-cover mr-4"
+                                        src={person.imageUrl1}
+                                        alt={person.heading}
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <div className=''>
+                                        <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
+                                        <p className="text-sm text-gray-600">{person.role}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </Accordion>
+                    <Accordion title="Population and Rainfall">
+                        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
+                            {pop.map((person, index) => (
+                                <div key={index} className="flex items-top py-4">
+                                    <Image
+                                        className="h-10 w-10 rounded-full object-cover mr-4"
+                                        src={person.imageUrl1}
+                                        alt={person.heading}
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <div className=''>
+                                        <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
+                                        <p className="text-sm text-gray-600">{person.role}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </Accordion>
+                    <Accordion title="Agriculture">
+                        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
+                            {agri.map((person, index) => (
+                                <div key={index} className="flex items-top py-4">
+                                    <Image
+                                        className="h-10 w-10 rounded-full object-cover mr-4"
+                                        src={person.imageUrl1}
+                                        alt={person.heading}
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <div className=''>
+                                        <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
+                                        <p className="text-sm text-gray-600">{person.role}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </Accordion>
+                    <Accordion title="Industries">
+                        <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-1">
+                            {industries.map((person, index) => (
+                                <div key={index} className="flex items-top py-4">
+                                    <Image
+                                        className="h-8 w-8 rounded-full object-cover mr-4"
+                                        src={person.imageUrl1}
+                                        alt={person.heading}
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <div className=''>
+                                        <h2 className="text-lg font-semibold text-gray-900">{person.heading}</h2>
+
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </Accordion>
+                    <Accordion title="History of Chennai">
+                        <Image
+                            src="/districts/infographics/chennai.svg"
+                            alt="phones"
+                            style={{
+                                width: 'auto',
+                                height: 'auto',
+                            }}
+                            width={600}
+                            height={900}
+                            className='flex flex-1 rounded-xl' />
+                    </Accordion>
+                    <Accordion title="Culture of Chennai">
+                        <Image
+                            src="/districts/infographics/chennai.svg"
+                            alt="phones"
+                            style={{
+                                width: 'auto',
+                                height: 'auto',
+                            }}
+                            width={600}
+                            height={900}
+                            className='flex flex-1 rounded-xl' />
+                    </Accordion>
+                    <Accordion title="Food Culture of Chennai">
+                        <Image
+                            src="/districts/infographics/chennai.svg"
+                            alt="phones"
+                            style={{
+                                width: 'auto',
+                                height: 'auto',
+                            }}
+                            width={600}
+                            height={900}
+                            className='flex flex-1 rounded-xl' />
+                    </Accordion>
+
+                </div>
+            </div>
+
+
+            {/* <div className="max-container flex w-full flex-col justify-between  bg-white bg-cover px-6  lg:px-20">
                 <Image
                     src="/districts/infographics/chennai.svg"
                     alt="Map of virudhunagar"
@@ -157,7 +199,7 @@ const Chennai = () => {
                     width={500}
                     height={300}
                     className='flex flex-1 items-center justify-end rounded-xl' />
-            </div>
+            </div> */}
 
             <div className="max-container relative w-full flex-col justify-between overflow-hidden bg-white bg-cover  lg:px-20">
 

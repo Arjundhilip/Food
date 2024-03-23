@@ -27,7 +27,7 @@ const Hero = () => {
               type="button"
               title="Read more"
               // icon="/android.svg"
-              variant="btn_green"
+              variant="btn_red"
             
             />
           </div>

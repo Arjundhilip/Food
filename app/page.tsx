@@ -1,3 +1,4 @@
+import Calen from "@/components/Calen";
 import Calendar from "@/components/Calendar";
 import Feature1 from "@/components/Feature1";
 import Feature10 from "@/components/Feature10";
@@ -15,7 +16,7 @@ export default function Home() {
       <Feature10 />
       <Feature11 />
       <Feature1 />
-      <Calendar/>
+      <Calen/>
       
       
     

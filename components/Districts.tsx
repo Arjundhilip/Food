@@ -20,8 +20,8 @@ export default function Example() {
 
       <div className="bg-white py-10 sm:py-10">
         <div className="mx-auto grid max-w-6xl gap-x-8 gap-y-20 px-6 lg:px-8">
-          <div className="md:w-8/12">
-            <h2 className="text-3xl font-bold tracking-tight text-[#00ABA6] sm:text-4xl">Districts</h2>
+          <div className="md:w-900">
+            <h2 className="text-3xl font-bold tracking-tight text-[#BE1E2D] sm:text-4xl">Districts</h2>
             <p className="text-justify my-4 text-sm text-gray-600">
               To celebrate the culinary diversity of our state through its districts, we have meticulously curated a collection that showcases the unique flavors, ingredients, and traditions of each district. From the rugged terrain of our mountainous districts to the fertile plains of our agricultural heartlands, each district has its own distinct identity shaped by its natural landscape, historical heritage, and local communities.
             </p>
@@ -49,7 +49,7 @@ export default function Example() {
           </ul>
         </div>*/}
 
-        <div className="mx-auto grid max-w-6xl gap-x-8 gap-y-20 px-6 py-4 lg:px-8 xl:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-x-8 gap-y-20 px-6 py-4 lg:px-8 sm:grid-cols-3">
           {districts.map((district) => (
             <div key={district.name}>
               <a href={district.href}>
