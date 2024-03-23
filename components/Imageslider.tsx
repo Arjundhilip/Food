@@ -19,7 +19,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000, // Set autoplay speed (in milliseconds)
     };
 
     return (
@@ -42,6 +44,8 @@ interface SliderSettings {
     speed: number;
     slidesToShow: number;
     slidesToScroll: number;
+    autoplay: boolean;
+    autoplaySpeed: number;
 }
 
 export default ImageSlider;

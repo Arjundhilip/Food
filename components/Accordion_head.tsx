@@ -6,7 +6,7 @@ interface AccordionProps {
   children: ReactNode;
 }
 
-const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
+const Accordion_head: React.FC<AccordionProps> = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -15,12 +15,13 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
 
 
   return (
-    <div className="border border-gray-300 rounded-md mb-4">
+    <div className="border border-gray-300 rounded-md mb-4" >
       <div
-        className="flex justify-between items-center p-4 cursor-pointer hover:bg-[#BE1E2D] hover:text-white rounded-md "
+        className="flex justify-between items-center p-4 cursor-pointer rounded-md mt-2"
         onClick={toggleAccordion}
       >
-        <h2 className="text-md font-semibold">{title}</h2>
+        <h2 className="text-xl font-bold">{title}</h2>
+        
         <svg
           className={`w-6 h-6 transition-transform ${isOpen ? "transform rotate-45" : ""}`}
           fill="none"
@@ -40,4 +41,4 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
   );
 };
 
-export default Accordion;
+export default Accordion_head;

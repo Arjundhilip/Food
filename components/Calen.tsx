@@ -23,7 +23,6 @@ const images = [
   '/districts/sq_districts/nagapattinam.jpg',
   '/districts/sq_districts/namakkal.jpg',
   '/districts/sq_districts/perambalur.jpg',
-  '/districts/sq_districts/pudukkottai.jpg',
   '/districts/sq_districts/ramanathapuram.jpg',
   '/districts/sq_districts/ranipet.jpg',
   '/districts/sq_districts/salem.jpg',
@@ -50,7 +49,7 @@ const Calen: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <h1 className="my-8 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Calendar</h1>
-      <div className="flex w-full flex-col px-6 lg:px-20">
+      <div className="flex w-full flex-col px-6 lg:px-20 mt-2">
         <ImageSlider images={images} />
       </div>
     </div>

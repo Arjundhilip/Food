@@ -55,13 +55,18 @@ export default function Example() {
               <a href={district.href}>
                 <div className="max-w-sm rounded-xl overflow-hidden shadow-lg">
                   <div className="relative">
-                    <Image
-                      src={district.imageUrl}
-                      alt="phones"
-                      width={800}
-                      height={340}
-                      className="object-cover"
-                    />
+                    <div className="image-container">
+                      <Image
+                        src={district.imageUrl}
+                        alt="phones"
+                        width={800}
+                        height={340}
+                        className="object-cover image"
+                      />
+                      <div className="overlay-text">
+                        <p className="text-center text-white text-[12px]">{district.name}</p>
+                      </div>
+                    </div>
                   </div>
                   <div className="px-6 py-4 hover:bg-[#00ABA6]">
                     <p className="text-base font-semibold leading-7 tracking-tight hover:text-white text-gray-900">{district.name}</p>
@@ -73,9 +78,6 @@ export default function Example() {
         </div>
 
       </div>
-
-
-
 
     </section>
 

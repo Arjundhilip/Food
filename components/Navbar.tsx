@@ -25,7 +25,7 @@ const media = [
 ]
 
 const history = [
-  { name: 'Literature', description: '', href: '#', icon: FingerPrintIcon },
+  { name: 'Literature', description: '', href: '/history', icon: FingerPrintIcon },
 
 ]
 
