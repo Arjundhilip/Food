@@ -10,7 +10,7 @@ export default function Example() {
             <div className="mx-auto max-w-2xl px-4 py-6 sm:px-10 sm:py-6 mb-8 lg:max-w-7xl lg:px-8">
                 <h1 className="my-8 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Districts</h1>
 
-                <div className="mx-auto grid max-w-6xl gap-x-8 gap-y-20 px-6 py-4 lg:px-8 xl:grid-cols-4">
+                <div className="mx-auto grid max-w-6xl gap-x-8 gap-y-20 px-6 py-4 lg:px-8 md:grid-cols-2 lg:grid-cols-4">
                     {districtsToShow.map((district) => (
                         <div key={district.name}>
                             <a href={district.href}>

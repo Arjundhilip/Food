@@ -183,7 +183,7 @@ const Chennai = () => {
             </div>
 
 
-            <div className=" max-container flex w-full flex-col justify-between gap-32 bg-white bg-cover bg-center bg-no-repeat px-6 py-12 text-black sm:flex-row sm:gap-12 sm:py-8 lg:px-20 2xl:rounded-5xl">
+            <div className=" max-container flex w-full flex-col justify-between gap-32 bg-white bg-cover bg-center bg-no-repeat px-6 py-12 text-black sm:flex-column sm:gap-12 sm:py-8 lg:px-20 2xl:rounded-5xl">
                 <div className='max-container relative flex w-full flex-col justify-between bg-white bg-cover'>
                     <h2 className="text-xl font-bold">Food Culture of Chennai</h2>
                     <Image
@@ -197,6 +197,7 @@ const Chennai = () => {
                         height={900}
                         className='flex flex-1 rounded-xl' />
                 </div>
+                
             </div>
 
 

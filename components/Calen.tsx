@@ -41,18 +41,29 @@ const images = [
   '/districts/sq_districts/tiruvannamalai.jpg',
   '/districts/sq_districts/viluppuram.jpg',
   '/districts/sq_districts/virudhunagar.jpg',
-
-
 ];
 
 const Calen: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="my-8 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Calendar</h1>
-      <div className="flex w-full flex-col px-6 lg:px-20 mt-2">
-        <ImageSlider images={images} />
+
+    <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+
+      <div className="relative mr-400 max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16">
+          <h2 className="mt-4 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Calendar
+          </h2>
+        </div>
+
+        <div className="mt-10 mb-5 place-content-center max-w-full" >
+          <ImageSlider images={images} />
+        </div>
+
       </div>
+
     </div>
+
   );
 };
 

@@ -48,7 +48,7 @@ const About = () => {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-4 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">About Us</h2>
+              <h2 className="text-base font-semibold leading-7 text-[#BE1E2D]">About Us</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tamil Nadu Culinary Archive</p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Welcome to the Tamil Nadu Culinary Archive, a digital sanctuary dedicated to safeguarding and celebrating the rich culinary heritage of Tamil Nadu.
@@ -57,7 +57,7 @@ const About = () => {
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
-                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" />
+                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-[#BE1E2D]" aria-hidden="true" />
                       {feature.name}
                     </dt>{' '}
                     <dd className="inline">{feature.description}</dd>
