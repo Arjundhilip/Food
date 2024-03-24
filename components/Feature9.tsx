@@ -21,7 +21,7 @@ const Feature9 = () => {
                         </dt>
                     </div>
 
-                    <div className="col-span-2 mx-auto flex max-w-lg flex-col gap-y-4">
+                    <div className="col-span-2 mx-auto flex max-w-lg flex-col gap-y-4 transform hover:scale-110 transition-transform duration-300 ease-in-out">
                         <Image
                             src="/food3.png"
                             alt="phones"

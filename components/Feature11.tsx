@@ -12,7 +12,7 @@ export default function Example() {
 
                 <div className="mx-auto grid max-w-6xl gap-x-8 gap-y-20 px-6 py-4 lg:px-8 md:grid-cols-2 lg:grid-cols-4">
                     {districtsToShow.map((district) => (
-                        <div key={district.name}>
+                        <div key={district.name} className="transform hover:scale-110 transition-transform duration-300 ease-in-out">
                             <a href={district.href}>
                                 <div className="max-w-sm rounded-xl overflow-hidden shadow-lg">
                                     <div className="relative">

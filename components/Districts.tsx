@@ -61,7 +61,7 @@ export default function Example() {
                         alt="phones"
                         width={800}
                         height={340}
-                        className="object-cover image"
+                        className="object-cover image transform hover:scale-110 transition-transform duration-300 ease-in-out"
                       />
                       <div className="overlay-text">
                         <p className="text-center text-white text-[12px]">{district.name}</p>
