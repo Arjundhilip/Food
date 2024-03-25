@@ -2,41 +2,11 @@
 import React from 'react';
 import Accordion from "../components/Accordion";
 import Image from 'next/image';
+import { ariyalur, chennai } from '@/constants/signaturedishes'
 
-const ariyalur = [
-  {
-    id: 1,
-    name: 'Srivilliputhur Palkova',
-    href: '/dishes/signature/srivilliputhurpalkova',
-    imageSrc: '/Ingredients/Palkova.jpg',
-    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-  },
-  {
-    id: 1,
-    name: 'Srivilliputhur Palkova',
-    href: '/dishes/signature/srivilliputhurpalkova',
-    imageSrc: '/Ingredients/Palkova.jpg',
-    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-  },
-  {
-    id: 1,
-    name: 'Srivilliputhur Palkova',
-    href: '/dishes/signature/srivilliputhurpalkova',
-    imageSrc: '/Ingredients/Palkova.jpg',
-    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-  },
-  
-]
 
-const chennai = [
-  {
-    id: 1,
-    name: 'Vada Curry',
-    href: '/dishes/signature/srivilliputhurpalkova',
-    imageSrc: '/Ingredients/Palkova.jpg',
-    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-  },
-]
+
+
 
 const srivilliputhur = [
   {

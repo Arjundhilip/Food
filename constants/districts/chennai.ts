@@ -3,6 +3,7 @@ export const first = [
         tamilheading: 'சென்னை',
         topic: 'Chennai',
         des: 'Chennai, the vibrant capital of Tamil Nadu, is a city that weaves together a rich tapestry of history, culture, and gastronomy. Nestled on the Coromandel Coast off the Bay of Bengal, it serves as the gateway to South India and stands as a testament to the region’s diverse heritage. Beyond its bustling streets, historic landmarks, and scenic beaches, Chennai is celebrated as a culinary hub, offering an exquisite array of traditional and modern cuisines.',
+        img: "/districts/Chennai/Chennai_3.png"
     },
 ]
 
@@ -104,77 +105,34 @@ export const industries = [
         // role:  'Automobile, Medical Tourism, SAAS, and Hardware Manufacturing',
         imageUrl1: '/icons/maincrops.png',
     },
-   
+
 ]
 
-export const signature = [
+export const history = [
     {
-        id: 1,
-        name: 'Milk(1.5L)',
-        href: '#',
-        price: '$48',
-        imageSrc: '/Ingredients/milk1.jpg',
-        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+
+        imageUrl1: "/districts/Chennai/history.svg",
     },
     {
-        id: 2,
-        name: '1 Cup Sugar',
-        href: '#',
-        price: '$35',
-        imageSrc: '/Ingredients/sugar1.jpg',
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+
+        imageUrl1: "/districts/Chennai/culture.svg",
     },
     {
-        id: 2,
-        name: '1 Cup Sugar',
-        href: '#',
-        price: '$35',
-        imageSrc: '/Ingredients/sugar1.jpg',
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+
+        imageUrl1: "/districts/Chennai/food.svg",
     },
-    {
-        id: 2,
-        name: '1 Cup Sugar',
-        href: '#',
-        price: '$35',
-        imageSrc: '/Ingredients/sugar1.jpg',
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-    },
+
 
 ]
 
 export const popular = [
     {
         id: 1,
-        name: 'Milk(1.5L)',
-        href: '#',
-        price: '$48',
-        imageSrc: '/Ingredients/milk1.jpg',
+        name: 'Chicken-65',
+        href: '/dishes/popular/chicken65',
+        imageSrc: '/dishes/vadacurry/top.jpg',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
-    {
-        id: 2,
-        name: '1 Cup Sugar',
-        href: '#',
-        price: '$35',
-        imageSrc: '/Ingredients/sugar1.jpg',
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-    },
-    {
-        id: 2,
-        name: '1 Cup Sugar',
-        href: '#',
-        price: '$35',
-        imageSrc: '/Ingredients/sugar1.jpg',
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-    },
-    {
-        id: 2,
-        name: '1 Cup Sugar',
-        href: '#',
-        price: '$35',
-        imageSrc: '/Ingredients/sugar1.jpg',
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-    },
+  
 
 ]
