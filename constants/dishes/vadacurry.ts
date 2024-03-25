@@ -11,8 +11,8 @@ export const intro = [
 
 export const info = [
     {
-        name: 'ANTHROPOLOGY',
-        imageSrc: '/Ingredients/Palkova.jpg',
+        name: '',
+        imageSrc: '/dishes/vadacurry/info.svg',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
 ]
