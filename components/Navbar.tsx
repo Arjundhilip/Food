@@ -19,13 +19,13 @@ import Search from "./Search"
 
 
 const media = [
-  { name: 'Images', description: '', href: '#', icon: UserIcon },
+  { name: 'Images', description: '', href: '/media/images', icon: UserIcon },
   { name: 'Video', description: '', href: '#', icon: CursorArrowRaysIcon },
 
 ]
 
 const history = [
-  { name: 'Literature', description: '', href: '/history', icon: FingerPrintIcon },
+  { name: 'Literature', description: '', href: '/history/literature', icon: FingerPrintIcon },
 
 ]
 

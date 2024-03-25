@@ -28,6 +28,16 @@ const ariyalur = [
   
 ]
 
+const chennai = [
+  {
+    id: 1,
+    name: 'Vada Curry',
+    href: '/dishes/signature/srivilliputhurpalkova',
+    imageSrc: '/Ingredients/Palkova.jpg',
+    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+  },
+]
+
 const srivilliputhur = [
   {
     id: 1,
@@ -54,6 +64,25 @@ const Signature = () => {
         <Accordion title="Ariyalur">
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
             {ariyalur.map((product) => (
+              <a key={product.id} href={product.href} className="group">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <Image
+                    src={product.imageSrc}
+                    alt={product.imageAlt}
+                    width={1200}
+                    height={1200}
+                    className="w-full h-auto object-cover group-hover:opacity-75"
+                  />
+                </div>
+                <h3 className="bold-20 lg:bold-20 mt-4 text-center text-sm text-gray-700">{product.name}</h3>
+              </a>
+            ))}
+          </div>
+        </Accordion>
+
+        <Accordion title="Chennai">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-4">
+            {chennai.map((product) => (
               <a key={product.id} href={product.href} className="group">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                   <Image

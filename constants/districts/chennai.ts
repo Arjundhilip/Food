@@ -2,7 +2,7 @@ export const first = [
     {
         tamilheading: 'சென்னை',
         topic: 'Chennai',
-        des: 'The name Chennai was derived from the name of Chennappa Nayaka, a Nayak ruler who served as a general under Venkata Raya of the Vijayanagara Empire from whom the British East India Company acquired the town in 1639.The first official use of the name was in August 1639 in a sale deed to Francis Day of the East India Company.A land grant was given to the Chennakesava Perumal Temple in Chennapatanam later in 1646, which some scholars argue to be the first use of the name.',
+        des: 'Chennai, the vibrant capital of Tamil Nadu, is a city that weaves together a rich tapestry of history, culture, and gastronomy. Nestled on the Coromandel Coast off the Bay of Bengal, it serves as the gateway to South India and stands as a testament to the region’s diverse heritage. Beyond its bustling streets, historic landmarks, and scenic beaches, Chennai is celebrated as a culinary hub, offering an exquisite array of traditional and modern cuisines.',
     },
 ]
 

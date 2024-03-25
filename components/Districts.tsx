@@ -64,7 +64,7 @@ export default function Example() {
                         className="object-cover image transform hover:scale-110 transition-transform duration-300 ease-in-out"
                       />
                       <div className="overlay-text">
-                        <p className="text-center text-white text-[12px]">{district.name}</p>
+                        <p className="text-center text-white text-[12px]">{district.place}</p>
                       </div>
                     </div>
                   </div>
