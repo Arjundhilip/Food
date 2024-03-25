@@ -225,6 +225,6 @@ export const districts = [
         name: 'Virudhunagar',
         href: '/districts/virudhunagar',
         imageUrl: '/districts/ls_districts/virudhunagar.jpg',
-        place: 'Yet to update'
+        place: 'Fireworks Town'
     },
 ];

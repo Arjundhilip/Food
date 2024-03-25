@@ -35,7 +35,7 @@ const Chicken_65 = () => {
         <section>
             <div className="mx-auto max-w-full px-4 place-content-center sm:px-6 lg:px-40" >
                 <Image
-                    src='/dishes/vadacurry/top.jpg'
+                    src='/dishes/chicken65/top.jpg'
                     alt="phones"
                     style={{
                         width: '100%',
@@ -321,14 +321,14 @@ const Chicken_65 = () => {
                             </li>
                         </ol> */}
 
-                        <h3 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Notes</h3>
+                        {/* <h3 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Notes</h3>
                         {notes.map((ingredient, index: number) => (
                             <ol key={index} className="mb-2 list-disc  list-inside">
                                 <li>
                                     <span className="italic text-gray-900 dark:text-black">{ingredient.point}</span>
                                 </li>
 
-                            </ol>))}
+                            </ol>))} */}
 
                         <h3 className="text-xl font-bold text-gray-800 border-t border-gray-200 pt-4">Nutrition Info (Approximate Values)</h3>
                         <dl className="pt-4 mb-4 mx-auto place-content-center max-w-full sm:grid grid-cols-1 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-2 col-span-2">

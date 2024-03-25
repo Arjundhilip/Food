@@ -15,22 +15,6 @@ export const info = [
         imageSrc: '/Ingredients/Palkova.jpg',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
-    {
-        name: 'SIGNIFICANT FEATURES',
-        imageSrc: '/Ingredients/Palkova.jpg',
-        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-    },
-    {
-        name: 'FESTIVALS AND CELEBRATIONS',
-        imageSrc: '/Ingredients/Palkova.jpg',
-        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-    },
-    {
-        name: 'SPECIALTY',
-        imageSrc: '/Ingredients/Palkova.jpg',
-        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-    },
-
 ]
 
 
@@ -216,5 +200,6 @@ export const notes = [
     },
 
 ];
+
 
 export const reviews = { href: '#', average: 5, totalCount: 120 }
