@@ -6,23 +6,28 @@ import React from 'react';
 const product = {
     images: [
         {
-            src: '/districts/sq_districts/ariyalur.jpg',
+            src: '/districts/ls_districts/ariyalur.jpg',
             alt: 'Two each of gray, white, and black shirts laying flat.',
         },
         {
-            src: '/districts/sq_districts/chennai.jpg',
+            src: '/districts/ls_districts/chennai.jpg',
             alt: 'Model wearing plain black basic tee.',
         },
         {
-            src: '/districts/sq_districts/coimbatore.jpg',
+            src: '/districts/ls_districts/coimbatore.jpg',
             alt: 'Model wearing plain gray basic tee.',
         },
         {
-            src: '/districts/sq_districts/ariyalur.jpg',
+            src: '/districts/ls_districts/ariyalur.jpg',
+            alt: 'Model wearing plain white basic tee.',
+        },
+        {
+            src: '/districts/ls_districts/ariyalur.jpg',
             alt: 'Model wearing plain white basic tee.',
         },
         
     ],
+    
 };
 
 
@@ -51,14 +56,18 @@ const Images: React.FC = () => {
                             <Image
                                 src={product.images[1].src}
                                 alt={product.images[1].alt}
-                                className="h-full w-full object-cover object-center" width={600} height = {600}
+                                className="h-full w-full object-cover object-center" 
+                                width={600} 
+                                height={600}
                             />
                         </div>
                         <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
                             <Image
                                 src={product.images[2].src}
                                 alt={product.images[2].alt}
-                                className="h-full w-full object-cover object-center" width={600} height = {600}
+                                className="h-full w-full object-cover object-center" 
+                                width={600} 
+                                height={600}
                             />
                         </div>
                     </div>
@@ -67,7 +76,9 @@ const Images: React.FC = () => {
                         <Image
                             src={product.images[3].src}
                             alt={product.images[3].alt}
-                            className="h-full w-full object-cover object-center" width={600} height = {600}
+                            className="h-full w-full object-cover object-center" 
+                            width={600} 
+                            height={600}
                         />
                     </div>
 

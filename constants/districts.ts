@@ -165,7 +165,7 @@ export const districts = [
         name: 'Thiruvarur',
         href: '/districts/thiruvarur',
         imageUrl: '/districts/ls_districts/thiruvarur.jpg',
-        place: 'Gangaikonda Cholapuram'
+        place: 'Aazhi Ther'
     },
     {
         name: 'Thoothukudi',
@@ -213,7 +213,7 @@ export const districts = [
         name: 'Vellore',
         href: '/districts/vellore',
         imageUrl: '/districts/ls_districts/vellore.jpg',
-        place: 'leather hub of India'
+        place: 'Leather hub of India'
     },
     {
         name: 'Viluppuram',

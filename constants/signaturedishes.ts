@@ -32,3 +32,13 @@ export const chennai = [
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
 ]
+
+export const virudhunagar = [
+    {
+        id: 1,
+        name: 'Palkova',
+        href: '/dishes/signature/vadacurry',
+        imageSrc: '/dishes/vadacurry/top.jpg',
+        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    },
+]
